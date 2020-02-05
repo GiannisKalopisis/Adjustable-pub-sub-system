@@ -1,0 +1,2 @@
+[2020-02-05 17:54:51,631] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@38cccef, name=log4j:logger=state.change.logger (state.change.logger)
+[2020-02-05 17:54:59,320] TRACE [Controller id=0 epoch=2] Received response {error_code=0} for request UPDATE_METADATA with correlation id 0 sent to broker gianniskalopisis-pc:9092 (id: 0 rack: null) (state.change.logger)
