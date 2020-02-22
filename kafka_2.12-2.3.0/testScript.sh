@@ -29,19 +29,25 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
-PATH="${DIR}/bin/kafka-producer-perf-test.sh"
+PATH="${DIR}/bin/kafka-run-class.sh org.apache.kafka.tools.ProducerPerformance"
 
 
 
 #
 #execute script :( 
 #
+
+if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then
+    export KAFKA_HEAP_OPTS="-Xmx512M"
+fi
+
 for i in 10 100 1000 10000 100000; do
 	echo ""
  	echo "Number of Records: $((1000*1024*1024/$i)), record size: $i"
  	#./bin/kafka-run-class.sh org.apache.kafka.tools.ProducerPerformance 
 	SCRIPT="${PATH} --topic ${TOPIC} --num-records $((1000*1024*1024/${i})) --record-size ${i} --throughput -1 --producer.config ${PROPERTIES}"
- 	"$SCRIPT"
+	echo $SCRIPT
+	eval $SCRIPT
  	echo "----------------------------------------------------------------------------------------------------"
 done;
 
