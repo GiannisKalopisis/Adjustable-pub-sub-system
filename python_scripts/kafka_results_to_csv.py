@@ -44,10 +44,17 @@ if __name__ == '__main__':
         # split last line of file
         # need changes to get the correct arguments from last line
         # now is just checking
-        splitted_last_line = re.split(r'[ ]+', last_line)
-        row.append(splitted_last_line[1])
-        row.append(splitted_last_line[6])
-        row.append(splitted_last_line[8])
+        # example line: 50000000 records sent, 1916957.405206 records/sec (18.28 MB/sec), 23.09 ms avg latency, 1304.00 ms max latency, 0 ms 50th, 7 ms 95th, 876 ms 99th, 1269 ms 99.9th.
+        splitted_last_line = re.split(r'[ \(]+', last_line)
+        # print(list(enumerate(splitted_last_line)))
+        row.append(splitted_last_line[3])
+        row.append(splitted_last_line[5])
+        row.append(splitted_last_line[7])
+        row.append(splitted_last_line[11])
+        row.append(splitted_last_line[15])
+        row.append(splitted_last_line[18])
+        row.append(splitted_last_line[21])
+        row.append(splitted_last_line[24])
 
         row_list.append(row)
 
