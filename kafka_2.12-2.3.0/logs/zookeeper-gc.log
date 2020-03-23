@@ -1,10 +1,10 @@
-[2020-02-05T17:54:50.805+0200][gc,heap] Heap region size: 1M
-[2020-02-05T17:54:50.812+0200][gc     ] Using G1
-[2020-02-05T17:54:50.812+0200][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
-[2020-02-05T17:54:50.813+0200][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff69ff8]
-[2020-02-05T17:54:50.813+0200][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe46ff8]
-[2020-02-05T18:07:17.746+0200][gc,heap,exit ] Heap
-[2020-02-05T18:07:17.746+0200][gc,heap,exit ]  garbage-first heap   total 524288K, used 24260K [0x00000000e0000000, 0x0000000100000000)
-[2020-02-05T18:07:17.746+0200][gc,heap,exit ]   region size 1024K, 24 young (24576K), 0 survivors (0K)
-[2020-02-05T18:07:17.746+0200][gc,heap,exit ]  Metaspace       used 7569K, capacity 7839K, committed 7936K, reserved 1056768K
-[2020-02-05T18:07:17.746+0200][gc,heap,exit ]   class space    used 842K, capacity 962K, committed 1024K, reserved 1048576K
+[2020-03-22T12:50:46.785+0200][gc,heap] Heap region size: 1M
+[2020-03-22T12:50:46.796+0200][gc     ] Using G1
+[2020-03-22T12:50:46.796+0200][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+[2020-03-22T12:50:46.796+0200][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff69ff8]
+[2020-03-22T12:50:46.796+0200][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe46ff8]
+[2020-03-22T12:50:48.041+0200][gc,heap,exit ] Heap
+[2020-03-22T12:50:48.041+0200][gc,heap,exit ]  garbage-first heap   total 524288K, used 15044K [0x00000000e0000000, 0x0000000100000000)
+[2020-03-22T12:50:48.041+0200][gc,heap,exit ]   region size 1024K, 15 young (15360K), 0 survivors (0K)
+[2020-03-22T12:50:48.041+0200][gc,heap,exit ]  Metaspace       used 6108K, capacity 6433K, committed 6784K, reserved 1056768K
+[2020-03-22T12:50:48.041+0200][gc,heap,exit ]   class space    used 706K, capacity 829K, committed 896K, reserved 1048576K
