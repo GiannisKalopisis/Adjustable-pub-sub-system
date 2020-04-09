@@ -7,15 +7,14 @@ if __name__ == '__main__':
     partirion = [1, 2, 5]
     message = [100, 500, 1000]
 
-    batch = [16384, 100000, 500000]
+    batch = [16384, 50000, 100000, 200000, 500000]
 
     counter = 1
     for rf in replication:
         print("Open broker: {}".format(rf))
         for part in partirion:
             if partirion.index(part) is 0:
-                if counter == (len(partirion)*len(message)*len(batch)*3*replication.index(rf) + 1) and counter != 1:
-                    print("./bin/kafka-topics.sh --delete --zookeeper 195.134.67.93:2181 " 
+                print("./bin/kafka-topics.sh --delete --zookeeper 195.134.67.93:2181 " 
                     "--topic test-part-5-rep-{} ; ".format(replication.index(rf)))
                 print("./bin/kafka-topics.sh --create --zookeeper 195.134.67.93:2181 " 
                     "--topic test-part-1-rep-{} --partitions 1 --replication-factor {} ; ".format(rf, rf))
