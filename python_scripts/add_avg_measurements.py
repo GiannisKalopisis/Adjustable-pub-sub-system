@@ -57,7 +57,7 @@ if __name__ == '__main__':
     else:
         print("Creating new file '{}'".format(dest_file))
 
-    with open(dest_file, 'w', newline = '') as file:
+    with open(dest_file, 'w+', newline = '') as file:
         writer = csv.writer(file, delimiter = '\t')
         writer.writerows(new_file_rows)
         

@@ -36,18 +36,18 @@ def parameterChange(parameter, size, config_type, rf):
         "../test_properties_files/{}_properties/{}-{}.properties ; ".format(parameter, size, config_type, config_type,rf))
 
 
-def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size):
+def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size, folder):
     print("./bin/kafka-producer-perf-test.sh "
         "--topic test-part-{}-rep-{} "
         "--num-records {} --record-size {} --throughput -1 "
         "--producer.config ../test_properties_files/producer_properties/producer-{}.properties "
-        "> ../python_scripts/metrics_folder/{:04d}_{}_{}_{}_{} ; "\
-        .format(part, rf, record_num, mes_size, rf, counter, rf, part, mes_size, measurement_size))
+        "> ../metrics/{}/{:04d}_{}_{}_{}_{} ; "\
+        .format(part, rf, record_num, mes_size, rf, folder, counter, rf, part, mes_size, measurement_size))
 
 
 #measurement_type = "batch.size"
 #parameter_type = "producer/server"
-def printCommands(parameter_list, measurement_type , parameter_type):
+def printCommands(parameter_list, measurement_type , parameter_type, folder):
 
     parameter = parameter_list
 
@@ -63,7 +63,7 @@ def printCommands(parameter_list, measurement_type , parameter_type):
                 for par in parameter:
                     parameterChange(measurement_type, par, parameter_type, rf)
                     for i in range(1,4):
-                        kafkaCommand(part, rf, int(total_bytes/mes), mes, counter, par)
+                        kafkaCommand(part, rf, int(total_bytes/mes), mes, counter, par, folder)
                         counter += 1
 
 
@@ -78,21 +78,21 @@ def wrongArgumentsFunc():
 
 def noArgumentsFunc():
     print("Error while trying to run command_creator.py. Not enough parameters.")
-    print("Example: $python3 command_creator.py 'parameter'")
+    print("Example: $python3 command_creator.py 'parameter' 'folder'")
 
 
 if __name__ == '__main__':
 
-    if len(sys.argv) <= 1:
+    if len(sys.argv) <= 2:
         noArgumentsFunc()
         sys.exit(1)
 
     test_parameter = sys.argv[1]
 
     if test_parameter == "batch.size":
-        printCommands(parameterDict["batch.size"], "batch.size", "producer")
+        printCommands(parameterDict["batch.size"], "batch.size", "producer", sys.argv[2])
     elif test_parameter == "buffer.memory":
-        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer")
+        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", sys.argv[2])
     else:
         wrongArgumentsFunc()
     
