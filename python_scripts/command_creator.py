@@ -41,7 +41,7 @@ def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size, fold
         "--topic test-part-{}-rep-{} "
         "--num-records {} --record-size {} --throughput -1 "
         "--producer.config ../test_properties_files/producer_properties/producer-{}.properties "
-        "> ../metrics/{}/{:04d}_{}_{}_{}_{} ; "\
+        "> {}/{:04d}_{}_{}_{}_{} ; "\
         .format(part, rf, record_num, mes_size, rf, folder, counter, rf, part, mes_size, measurement_size))
 
 
