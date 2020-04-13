@@ -81,6 +81,12 @@ def noArgumentsFunc():
     print("Example: $python3 command_creator.py 'parameter' 'folder'")
 
 
+def removeLastBackslash(folder):
+    if folder[-1] == '/':
+        folder = folder[:-1]
+    return folder
+
+
 if __name__ == '__main__':
 
     if len(sys.argv) <= 2:
@@ -89,10 +95,12 @@ if __name__ == '__main__':
 
     test_parameter = sys.argv[1]
 
+    folder = removeLastBackslash(sys.argv[2])
+
     if test_parameter == "batch.size":
-        printCommands(parameterDict["batch.size"], "batch.size", "producer", sys.argv[2])
+        printCommands(parameterDict["batch.size"], "batch.size", "producer", folder)
     elif test_parameter == "buffer.memory":
-        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", sys.argv[2])
+        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", folder)
     else:
         wrongArgumentsFunc()
     
