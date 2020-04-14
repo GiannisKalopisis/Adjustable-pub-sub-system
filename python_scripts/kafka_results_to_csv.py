@@ -26,6 +26,7 @@ if __name__ == '__main__':
     entries = Path(directory)
     for entry in entries.iterdir():
         file_list.append(entry.name)
+    file_list = sorted(file_list)
 
     # read every file
     row_list = []
