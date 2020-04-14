@@ -1,0 +1,20 @@
+1)Zookeeper Server:
+    ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+
+2)Kafka Server:
+    ./bin/kafka-server-start.sh ../server.properties/server-{0,1,2,3,4}.properties
+
+3)Run Producer Performance Test:
+    ./bin/kafka-producer-perf-test.sh --topic {topic} --num-records {num} --record-size {num} --throughput -1 --producer.config ../test_properties_files/producer_properties/producer-{1,2,3,4,5}.properties
+
+4)Delete Topic:
+    ./bin/kafka-topics.sh --delete --zookeeper 195.134.67.93:2181 --topic {topic}
+
+5)Create Topic:
+    ./bin/kafka-topics.sh --create --zookeeper 195.134.67.93:2181 --topic {topic} --partitions {} --replication-factor {}
+
+6)Describe Topic:
+    ./bin/kafka-topics.sh --describe --zookeeper 195.134.67.93:2181 {Optional: --topic {topic}}     (Might works with bootstrap.server too)
+
+7)List Topic:
+    ./bin/kafka-topics.sh --list --zookeeper 195.134.67.93:2181 {Optional: --topic {topic}}     (Might works with bootstrap.server too)
