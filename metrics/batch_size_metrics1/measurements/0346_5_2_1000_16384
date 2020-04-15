@@ -1,8 +1,11 @@
-364914 records sent, 72982.8 records/sec (69.60 MB/sec), 385.3 ms avg latency, 1193.0 ms max latency.
-102605 records sent, 19973.7 records/sec (19.05 MB/sec), 608.2 ms avg latency, 4256.0 ms max latency.
-7090 records sent, 1028.6 records/sec (0.98 MB/sec), 5826.7 ms avg latency, 11333.0 ms max latency.
-6720 records sent, 1100.6 records/sec (1.05 MB/sec), 13380.9 ms avg latency, 17224.0 ms max latency.
-1232 records sent, 203.8 records/sec (0.19 MB/sec), 21731.0 ms avg latency, 23240.0 ms max latency.
-6736 records sent, 1340.0 records/sec (1.28 MB/sec), 26036.6 ms avg latency, 28081.0 ms max latency.
-9856 records sent, 1969.2 records/sec (1.88 MB/sec), 29344.4 ms avg latency, 30571.0 ms max latency.
-500000 records sent, 12377.769526 records/sec (11.80 MB/sec), 1702.53 ms avg latency, 31203.00 ms max latency, 466 ms 50th, 13189 ms 95th, 29485 ms 99th, 30395 ms 99.9th.
+252209 records sent, 50441.8 records/sec (48.11 MB/sec), 564.7 ms avg latency, 775.0 ms max latency.
+181808 records sent, 36238.4 records/sec (34.56 MB/sec), 854.9 ms avg latency, 943.0 ms max latency.
+25201 records sent, 2132.1 records/sec (2.03 MB/sec), 567.9 ms avg latency, 13120.0 ms max latency.
+17727 records sent, 2180.7 records/sec (2.08 MB/sec), 10673.8 ms avg latency, 20507.0 ms max latency.
+176 records sent, 29.3 records/sec (0.03 MB/sec), 20542.4 ms avg latency, 26520.0 ms max latency.
+160 records sent, 13.5 records/sec (0.01 MB/sec), 26596.4 ms avg latency, 38388.0 ms max latency.
+320 records sent, 55.0 records/sec (0.05 MB/sec), 40174.9 ms avg latency, 44198.0 ms max latency.
+5152 records sent, 1029.4 records/sec (0.98 MB/sec), 45205.3 ms avg latency, 48757.0 ms max latency.
+7616 records sent, 1481.7 records/sec (1.41 MB/sec), 50229.4 ms avg latency, 53141.0 ms max latency.
+8576 records sent, 1682.9 records/sec (1.60 MB/sec), 51562.3 ms avg latency, 55815.0 ms max latency.
+500000 records sent, 7065.340267 records/sec (6.74 MB/sec), 3260.12 ms avg latency, 55815.00 ms max latency, 729 ms 50th, 13978 ms 95th, 53302 ms 99th, 55552 ms 99.9th.

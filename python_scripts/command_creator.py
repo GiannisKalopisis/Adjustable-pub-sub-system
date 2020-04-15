@@ -9,7 +9,9 @@ message = [100, 500, 1000]
 
 parameterDict = {
     "batch.size": [16384, 50000, 100000, 200000, 500000],
-    "buffer.memory": [10000000, 33554432, 100000000, 200000000]
+    "buffer.memory": [10000000, 33554432, 100000000, 200000000],
+    "linger.ms": [0, 1, 2, 5, 10],
+    "max.request.size": [500000, 1048576, 2000000, 5000000, 10000000]
 }
 
 
@@ -101,6 +103,10 @@ if __name__ == '__main__':
         printCommands(parameterDict["batch.size"], "batch.size", "producer", folder)
     elif test_parameter == "buffer.memory":
         printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", folder)
+    elif test_parameter == "linger.ms":
+        printCommands(parameterDict["linger.ms"], "linger.ms", "producer", folder)
+    elif test_parameter == "max.request.size":
+        printCommands(parameterDict["max.request.size"], "max.request.size", "producer", folder)
     else:
         wrongArgumentsFunc()
     
