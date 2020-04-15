@@ -2,7 +2,11 @@
     ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 
 2)Kafka Server:
-    ./bin/kafka-server-start.sh ../server.properties/server-{0,1,2,3,4}.properties
+    ./bin/kafka-server-start.sh ../server.properties/server-0.properties
+    ./bin/kafka-server-start.sh ../server.properties/server-1.properties
+    ./bin/kafka-server-start.sh ../server.properties/server-2.properties
+    ./bin/kafka-server-start.sh ../server.properties/server-3.properties
+    ./bin/kafka-server-start.sh ../server.properties/server-4.properties
 
 3)Run Producer Performance Test:
     ./bin/kafka-producer-perf-test.sh --topic {topic} --num-records {num} --record-size {num} --throughput -1 --producer.config ../test_properties_files/producer_properties/producer-{1,2,3,4,5}.properties
