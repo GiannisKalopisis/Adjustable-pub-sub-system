@@ -1,690 +1,386 @@
-[2020-04-14 19:02:47,900] INFO Processed session termination for sessionid: 0x100b63815780001 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:02:47,904] INFO Closed socket connection for client /195.134.67.93:40182 which had sessionid 0x100b63815780001 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:02:47,980] INFO Processed session termination for sessionid: 0x100b63815780002 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:02:47,983] INFO Closed socket connection for client /195.134.67.93:40866 which had sessionid 0x100b63815780002 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:02:48,048] INFO Processed session termination for sessionid: 0x100b63815780003 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:02:48,059] INFO Closed socket connection for client /195.134.67.93:40176 which had sessionid 0x100b63815780003 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:02:48,070] INFO Processed session termination for sessionid: 0x100b63815780004 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:02:48,072] INFO Closed socket connection for client /195.134.67.93:40864 which had sessionid 0x100b63815780004 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:03:03,187] INFO Processed session termination for sessionid: 0x100b63815780000 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:03:03,189] INFO Closed socket connection for client /195.134.67.93:40184 which had sessionid 0x100b63815780000 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:06:51,130] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:06:51,132] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:06:51,132] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:06:51,132] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:06:51,132] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
-[2020-04-14 19:06:51,142] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:06:51,143] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
-[2020-04-14 19:06:51,150] INFO Server environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:host.name=mojito (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.version=1.8.0_242 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.vendor=Private Build (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.class.path=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/activation-1.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/guava-20.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-scala_2.12-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-scala_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0-sources.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/paranamer-2.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-library-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-logging_2.12-3.9.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-reflect-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zkclient-0.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,150] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,151] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,151] INFO Server environment:os.version=4.15.0-88-generic (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,151] INFO Server environment:user.name=sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,151] INFO Server environment:user.home=/home/sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,151] INFO Server environment:user.dir=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,157] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,157] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,157] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:06:51,163] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
-[2020-04-14 19:06:51,166] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
-[2020-04-14 19:06:51,167] ERROR Unexpected exception, exiting abnormally (org.apache.zookeeper.server.ZooKeeperServerMain)
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:433)
-	at sun.nio.ch.Net.bind(Net.java:425)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:78)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory.configure(NIOServerCnxnFactory.java:90)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:120)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:89)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:55)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:119)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:81)
-[2020-04-14 19:07:17,262] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:07:17,264] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:07:17,264] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:07:17,264] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:07:17,264] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
-[2020-04-14 19:07:17,273] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:07:17,274] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
-[2020-04-14 19:07:17,279] INFO Server environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:host.name=mojito (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:java.version=1.8.0_242 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:java.vendor=Private Build (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:java.class.path=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/activation-1.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/guava-20.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-scala_2.12-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-scala_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0-sources.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/paranamer-2.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-library-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-logging_2.12-3.9.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-reflect-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zkclient-0.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,279] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:os.version=4.15.0-88-generic (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:user.name=sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:user.home=/home/sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,280] INFO Server environment:user.dir=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,285] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,285] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,285] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:07:17,289] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
-[2020-04-14 19:07:17,292] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
-[2020-04-14 19:07:17,292] ERROR Unexpected exception, exiting abnormally (org.apache.zookeeper.server.ZooKeeperServerMain)
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:433)
-	at sun.nio.ch.Net.bind(Net.java:425)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:78)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory.configure(NIOServerCnxnFactory.java:90)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:120)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:89)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:55)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:119)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:81)
-[2020-04-14 19:12:00,070] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:12:00,071] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:12:00,071] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:12:00,071] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:12:00,071] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
-[2020-04-14 19:12:00,081] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:12:00,081] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
-[2020-04-14 19:12:00,086] INFO Server environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,086] INFO Server environment:host.name=mojito (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.version=1.8.0_242 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.vendor=Private Build (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.class.path=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/activation-1.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/guava-20.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-scala_2.12-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-scala_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0-sources.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/paranamer-2.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-library-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-logging_2.12-3.9.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-reflect-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zkclient-0.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,087] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:os.version=4.15.0-88-generic (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:user.name=sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:user.home=/home/sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,088] INFO Server environment:user.dir=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,093] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,093] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,093] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:12:00,097] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
-[2020-04-14 19:12:00,100] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
-[2020-04-14 19:12:00,100] ERROR Unexpected exception, exiting abnormally (org.apache.zookeeper.server.ZooKeeperServerMain)
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:433)
-	at sun.nio.ch.Net.bind(Net.java:425)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:78)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory.configure(NIOServerCnxnFactory.java:90)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:120)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:89)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:55)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:119)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:81)
-[2020-04-14 19:19:22,955] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:19:22,956] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:19:22,956] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:19:22,956] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
-[2020-04-14 19:19:22,956] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
-[2020-04-14 19:19:22,966] INFO Reading configuration from: ./config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
-[2020-04-14 19:19:22,966] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
-[2020-04-14 19:19:22,971] INFO Server environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,971] INFO Server environment:host.name=mojito (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,971] INFO Server environment:java.version=1.8.0_242 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,971] INFO Server environment:java.vendor=Private Build (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:java.class.path=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/activation-1.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/guava-20.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-scala_2.12-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-scala_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0-sources.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/paranamer-2.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-library-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-logging_2.12-3.9.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-reflect-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zkclient-0.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:os.version=4.15.0-88-generic (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:user.name=sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:user.home=/home/sdi1500059 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,972] INFO Server environment:user.dir=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,977] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,977] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,977] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:22,982] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
-[2020-04-14 19:19:22,984] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
-[2020-04-14 19:19:46,928] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
-[2020-04-14 19:19:47,324] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
-[2020-04-14 19:19:47,324] INFO starting (kafka.server.KafkaServer)
-[2020-04-14 19:19:47,325] INFO Connecting to zookeeper on 195.134.67.93:2181 (kafka.server.KafkaServer)
-[2020-04-14 19:19:47,343] INFO [ZooKeeperClient Kafka server] Initializing a new session to 195.134.67.93:2181. (kafka.zookeeper.ZooKeeperClient)
-[2020-04-14 19:19:47,346] INFO Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:host.name=mojito (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.version=1.8.0_242 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.vendor=Private Build (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.class.path=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/activation-1.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-file-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-json-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/guava-20.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jackson-module-scala_2.12-2.9.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-client-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-common-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jersey-server-2.28.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/jsr305-3.0.2.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-scala_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0-sources.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/kafka_2.12-2.3.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/log4j-1.2.17.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/paranamer-2.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/reflections-0.9.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-library-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-logging_2.12-3.9.0.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/scala-reflect-2.12.8.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zkclient-0.11.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,346] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:os.version=4.15.0-88-generic (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:user.name=sdi1500059 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:user.home=/home/sdi1500059 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,347] INFO Client environment:user.dir=/home/sdi1500059/Adjustable-pub-sub-system/kafka_2.12-2.3.0 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,348] INFO Initiating client connection, connectString=195.134.67.93:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@6a28ffa4 (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:19:47,356] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
-[2020-04-14 19:19:47,360] INFO Opening socket connection to server go.di.uoa.gr/195.134.67.93:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
-[2020-04-14 19:19:47,363] INFO Socket connection established to go.di.uoa.gr/195.134.67.93:2181, initiating session (org.apache.zookeeper.ClientCnxn)
-[2020-04-14 19:19:47,364] INFO Accepted socket connection from /195.134.67.93:40942 (org.apache.zookeeper.server.NIOServerCnxnFactory)
-[2020-04-14 19:19:47,369] INFO Client attempting to establish new session at /195.134.67.93:40942 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:47,370] INFO Creating new log file: log.1 (org.apache.zookeeper.server.persistence.FileTxnLog)
-[2020-04-14 19:19:47,381] INFO Established session 0x100b6c002f20000 with negotiated timeout 6000 for client /195.134.67.93:40942 (org.apache.zookeeper.server.ZooKeeperServer)
-[2020-04-14 19:19:47,382] INFO Session establishment complete on server go.di.uoa.gr/195.134.67.93:2181, sessionid = 0x100b6c002f20000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
-[2020-04-14 19:19:47,384] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
-[2020-04-14 19:19:47,465] INFO Got user-level KeeperException when processing sessionid:0x100b6c002f20000 type:create cxid:0x2 zxid:0x3 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NoNode for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:19:47,481] INFO Got user-level KeeperException when processing sessionid:0x100b6c002f20000 type:create cxid:0x6 zxid:0x7 txntype:-1 reqpath:n/a Error Path:/config Error:KeeperErrorCode = NoNode for /config (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:19:47,496] INFO Got user-level KeeperException when processing sessionid:0x100b6c002f20000 type:create cxid:0x9 zxid:0xa txntype:-1 reqpath:n/a Error Path:/admin Error:KeeperErrorCode = NoNode for /admin (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:19:47,704] INFO Got user-level KeeperException when processing sessionid:0x100b6c002f20000 type:create cxid:0x15 zxid:0x15 txntype:-1 reqpath:n/a Error Path:/cluster Error:KeeperErrorCode = NoNode for /cluster (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:19:47,713] INFO Cluster ID = TBMMwSQbQk-TYVvQidzusw (kafka.server.KafkaServer)
-[2020-04-14 19:19:47,716] WARN No meta.properties file under dir /data/sdi1500059/logs/kafka-logs-0/meta.properties (kafka.server.BrokerMetadataCheckpoint)
-[2020-04-14 19:19:47,772] INFO KafkaConfig values: 
-	advertised.host.name = null
-	advertised.listeners = null
-	advertised.port = null
-	alter.config.policy.class.name = null
-	alter.log.dirs.replication.quota.window.num = 11
-	alter.log.dirs.replication.quota.window.size.seconds = 1
-	authorizer.class.name = 
-	auto.create.topics.enable = true
-	auto.leader.rebalance.enable = true
-	background.threads = 10
-	broker.id = 0
-	broker.id.generation.enable = true
-	broker.rack = null
-	client.quota.callback.class = null
-	compression.type = producer
-	connection.failed.authentication.delay.ms = 100
-	connections.max.idle.ms = 600000
-	connections.max.reauth.ms = 0
-	control.plane.listener.name = null
-	controlled.shutdown.enable = true
-	controlled.shutdown.max.retries = 3
-	controlled.shutdown.retry.backoff.ms = 5000
-	controller.socket.timeout.ms = 30000
-	create.topic.policy.class.name = null
-	default.replication.factor = 1
-	delegation.token.expiry.check.interval.ms = 3600000
-	delegation.token.expiry.time.ms = 86400000
-	delegation.token.master.key = null
-	delegation.token.max.lifetime.ms = 604800000
-	delete.records.purgatory.purge.interval.requests = 1
-	delete.topic.enable = true
-	fetch.purgatory.purge.interval.requests = 1000
-	group.initial.rebalance.delay.ms = 0
-	group.max.session.timeout.ms = 1800000
-	group.max.size = 2147483647
-	group.min.session.timeout.ms = 6000
-	host.name = 
-	inter.broker.listener.name = null
-	inter.broker.protocol.version = 2.3-IV1
-	kafka.metrics.polling.interval.secs = 10
-	kafka.metrics.reporters = []
-	leader.imbalance.check.interval.seconds = 300
-	leader.imbalance.per.broker.percentage = 10
-	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
-	listeners = PLAINTEXT://195.134.67.93:9090
-	log.cleaner.backoff.ms = 15000
-	log.cleaner.dedupe.buffer.size = 134217728
-	log.cleaner.delete.retention.ms = 86400000
-	log.cleaner.enable = true
-	log.cleaner.io.buffer.load.factor = 0.9
-	log.cleaner.io.buffer.size = 524288
-	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
-	log.cleaner.max.compaction.lag.ms = 9223372036854775807
-	log.cleaner.min.cleanable.ratio = 0.5
-	log.cleaner.min.compaction.lag.ms = 0
-	log.cleaner.threads = 1
-	log.cleanup.policy = [delete]
-	log.dir = /tmp/kafka-logs
-	log.dirs = /data/sdi1500059/logs/kafka-logs-0
-	log.flush.interval.messages = 9223372036854775807
-	log.flush.interval.ms = null
-	log.flush.offset.checkpoint.interval.ms = 60000
-	log.flush.scheduler.interval.ms = 9223372036854775807
-	log.flush.start.offset.checkpoint.interval.ms = 60000
-	log.index.interval.bytes = 4096
-	log.index.size.max.bytes = 10485760
-	log.message.downconversion.enable = true
-	log.message.format.version = 2.3-IV1
-	log.message.timestamp.difference.max.ms = 9223372036854775807
-	log.message.timestamp.type = CreateTime
-	log.preallocate = false
-	log.retention.bytes = -1
-	log.retention.check.interval.ms = 300000
-	log.retention.hours = 168
-	log.retention.minutes = null
-	log.retention.ms = null
-	log.roll.hours = 168
-	log.roll.jitter.hours = 0
-	log.roll.jitter.ms = null
-	log.roll.ms = null
-	log.segment.bytes = 1073741824
-	log.segment.delete.delay.ms = 60000
-	max.connections = 2147483647
-	max.connections.per.ip = 2147483647
-	max.connections.per.ip.overrides = 
-	max.incremental.fetch.session.cache.slots = 1000
-	message.max.bytes = 1000012
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	min.insync.replicas = 1
-	num.io.threads = 8
-	num.network.threads = 3
-	num.partitions = 1
-	num.recovery.threads.per.data.dir = 1
-	num.replica.alter.log.dirs.threads = null
-	num.replica.fetchers = 1
-	offset.metadata.max.bytes = 4096
-	offsets.commit.required.acks = -1
-	offsets.commit.timeout.ms = 5000
-	offsets.load.buffer.size = 5242880
-	offsets.retention.check.interval.ms = 600000
-	offsets.retention.minutes = 10080
-	offsets.topic.compression.codec = 0
-	offsets.topic.num.partitions = 50
-	offsets.topic.replication.factor = 1
-	offsets.topic.segment.bytes = 104857600
-	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
-	password.encoder.iterations = 4096
-	password.encoder.key.length = 128
-	password.encoder.keyfactory.algorithm = null
-	password.encoder.old.secret = null
-	password.encoder.secret = null
-	port = 9092
-	principal.builder.class = null
-	producer.purgatory.purge.interval.requests = 1000
-	queued.max.request.bytes = -1
-	queued.max.requests = 500
-	quota.consumer.default = 9223372036854775807
-	quota.producer.default = 9223372036854775807
-	quota.window.num = 11
-	quota.window.size.seconds = 1
-	replica.fetch.backoff.ms = 1000
-	replica.fetch.max.bytes = 1048576
-	replica.fetch.min.bytes = 1
-	replica.fetch.response.max.bytes = 10485760
-	replica.fetch.wait.max.ms = 500
-	replica.high.watermark.checkpoint.interval.ms = 5000
-	replica.lag.time.max.ms = 10000
-	replica.socket.receive.buffer.bytes = 65536
-	replica.socket.timeout.ms = 30000
-	replication.quota.window.num = 11
-	replication.quota.window.size.seconds = 1
-	request.timeout.ms = 30000
-	reserved.broker.max.id = 1000
-	sasl.client.callback.handler.class = null
-	sasl.enabled.mechanisms = [GSSAPI]
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.principal.to.local.rules = [DEFAULT]
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism.inter.broker.protocol = GSSAPI
-	sasl.server.callback.handler.class = null
-	security.inter.broker.protocol = PLAINTEXT
-	socket.receive.buffer.bytes = 102400
-	socket.request.max.bytes = 104857600
-	socket.send.buffer.bytes = 102400
-	ssl.cipher.suites = []
-	ssl.client.auth = none
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.principal.mapping.rules = [DEFAULT]
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
-	transaction.max.timeout.ms = 900000
-	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
-	transaction.state.log.load.buffer.size = 5242880
-	transaction.state.log.min.isr = 1
-	transaction.state.log.num.partitions = 50
-	transaction.state.log.replication.factor = 1
-	transaction.state.log.segment.bytes = 104857600
-	transactional.id.expiration.ms = 604800000
-	unclean.leader.election.enable = false
-	zookeeper.connect = 195.134.67.93:2181
-	zookeeper.connection.timeout.ms = 6000
-	zookeeper.max.in.flight.requests = 10
-	zookeeper.session.timeout.ms = 6000
-	zookeeper.set.acl = false
-	zookeeper.sync.time.ms = 2000
- (kafka.server.KafkaConfig)
-[2020-04-14 19:19:47,780] INFO KafkaConfig values: 
-	advertised.host.name = null
-	advertised.listeners = null
-	advertised.port = null
-	alter.config.policy.class.name = null
-	alter.log.dirs.replication.quota.window.num = 11
-	alter.log.dirs.replication.quota.window.size.seconds = 1
-	authorizer.class.name = 
-	auto.create.topics.enable = true
-	auto.leader.rebalance.enable = true
-	background.threads = 10
-	broker.id = 0
-	broker.id.generation.enable = true
-	broker.rack = null
-	client.quota.callback.class = null
-	compression.type = producer
-	connection.failed.authentication.delay.ms = 100
-	connections.max.idle.ms = 600000
-	connections.max.reauth.ms = 0
-	control.plane.listener.name = null
-	controlled.shutdown.enable = true
-	controlled.shutdown.max.retries = 3
-	controlled.shutdown.retry.backoff.ms = 5000
-	controller.socket.timeout.ms = 30000
-	create.topic.policy.class.name = null
-	default.replication.factor = 1
-	delegation.token.expiry.check.interval.ms = 3600000
-	delegation.token.expiry.time.ms = 86400000
-	delegation.token.master.key = null
-	delegation.token.max.lifetime.ms = 604800000
-	delete.records.purgatory.purge.interval.requests = 1
-	delete.topic.enable = true
-	fetch.purgatory.purge.interval.requests = 1000
-	group.initial.rebalance.delay.ms = 0
-	group.max.session.timeout.ms = 1800000
-	group.max.size = 2147483647
-	group.min.session.timeout.ms = 6000
-	host.name = 
-	inter.broker.listener.name = null
-	inter.broker.protocol.version = 2.3-IV1
-	kafka.metrics.polling.interval.secs = 10
-	kafka.metrics.reporters = []
-	leader.imbalance.check.interval.seconds = 300
-	leader.imbalance.per.broker.percentage = 10
-	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
-	listeners = PLAINTEXT://195.134.67.93:9090
-	log.cleaner.backoff.ms = 15000
-	log.cleaner.dedupe.buffer.size = 134217728
-	log.cleaner.delete.retention.ms = 86400000
-	log.cleaner.enable = true
-	log.cleaner.io.buffer.load.factor = 0.9
-	log.cleaner.io.buffer.size = 524288
-	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
-	log.cleaner.max.compaction.lag.ms = 9223372036854775807
-	log.cleaner.min.cleanable.ratio = 0.5
-	log.cleaner.min.compaction.lag.ms = 0
-	log.cleaner.threads = 1
-	log.cleanup.policy = [delete]
-	log.dir = /tmp/kafka-logs
-	log.dirs = /data/sdi1500059/logs/kafka-logs-0
-	log.flush.interval.messages = 9223372036854775807
-	log.flush.interval.ms = null
-	log.flush.offset.checkpoint.interval.ms = 60000
-	log.flush.scheduler.interval.ms = 9223372036854775807
-	log.flush.start.offset.checkpoint.interval.ms = 60000
-	log.index.interval.bytes = 4096
-	log.index.size.max.bytes = 10485760
-	log.message.downconversion.enable = true
-	log.message.format.version = 2.3-IV1
-	log.message.timestamp.difference.max.ms = 9223372036854775807
-	log.message.timestamp.type = CreateTime
-	log.preallocate = false
-	log.retention.bytes = -1
-	log.retention.check.interval.ms = 300000
-	log.retention.hours = 168
-	log.retention.minutes = null
-	log.retention.ms = null
-	log.roll.hours = 168
-	log.roll.jitter.hours = 0
-	log.roll.jitter.ms = null
-	log.roll.ms = null
-	log.segment.bytes = 1073741824
-	log.segment.delete.delay.ms = 60000
-	max.connections = 2147483647
-	max.connections.per.ip = 2147483647
-	max.connections.per.ip.overrides = 
-	max.incremental.fetch.session.cache.slots = 1000
-	message.max.bytes = 1000012
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	min.insync.replicas = 1
-	num.io.threads = 8
-	num.network.threads = 3
-	num.partitions = 1
-	num.recovery.threads.per.data.dir = 1
-	num.replica.alter.log.dirs.threads = null
-	num.replica.fetchers = 1
-	offset.metadata.max.bytes = 4096
-	offsets.commit.required.acks = -1
-	offsets.commit.timeout.ms = 5000
-	offsets.load.buffer.size = 5242880
-	offsets.retention.check.interval.ms = 600000
-	offsets.retention.minutes = 10080
-	offsets.topic.compression.codec = 0
-	offsets.topic.num.partitions = 50
-	offsets.topic.replication.factor = 1
-	offsets.topic.segment.bytes = 104857600
-	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
-	password.encoder.iterations = 4096
-	password.encoder.key.length = 128
-	password.encoder.keyfactory.algorithm = null
-	password.encoder.old.secret = null
-	password.encoder.secret = null
-	port = 9092
-	principal.builder.class = null
-	producer.purgatory.purge.interval.requests = 1000
-	queued.max.request.bytes = -1
-	queued.max.requests = 500
-	quota.consumer.default = 9223372036854775807
-	quota.producer.default = 9223372036854775807
-	quota.window.num = 11
-	quota.window.size.seconds = 1
-	replica.fetch.backoff.ms = 1000
-	replica.fetch.max.bytes = 1048576
-	replica.fetch.min.bytes = 1
-	replica.fetch.response.max.bytes = 10485760
-	replica.fetch.wait.max.ms = 500
-	replica.high.watermark.checkpoint.interval.ms = 5000
-	replica.lag.time.max.ms = 10000
-	replica.socket.receive.buffer.bytes = 65536
-	replica.socket.timeout.ms = 30000
-	replication.quota.window.num = 11
-	replication.quota.window.size.seconds = 1
-	request.timeout.ms = 30000
-	reserved.broker.max.id = 1000
-	sasl.client.callback.handler.class = null
-	sasl.enabled.mechanisms = [GSSAPI]
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.principal.to.local.rules = [DEFAULT]
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism.inter.broker.protocol = GSSAPI
-	sasl.server.callback.handler.class = null
-	security.inter.broker.protocol = PLAINTEXT
-	socket.receive.buffer.bytes = 102400
-	socket.request.max.bytes = 104857600
-	socket.send.buffer.bytes = 102400
-	ssl.cipher.suites = []
-	ssl.client.auth = none
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
-	ssl.endpoint.identification.algorithm = https
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.principal.mapping.rules = [DEFAULT]
-	ssl.protocol = TLS
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
-	transaction.max.timeout.ms = 900000
-	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
-	transaction.state.log.load.buffer.size = 5242880
-	transaction.state.log.min.isr = 1
-	transaction.state.log.num.partitions = 50
-	transaction.state.log.replication.factor = 1
-	transaction.state.log.segment.bytes = 104857600
-	transactional.id.expiration.ms = 604800000
-	unclean.leader.election.enable = false
-	zookeeper.connect = 195.134.67.93:2181
-	zookeeper.connection.timeout.ms = 6000
-	zookeeper.max.in.flight.requests = 10
-	zookeeper.session.timeout.ms = 6000
-	zookeeper.set.acl = false
-	zookeeper.sync.time.ms = 2000
- (kafka.server.KafkaConfig)
-[2020-04-14 19:19:47,799] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:19:47,799] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:19:47,800] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:19:47,818] INFO Log directory /data/sdi1500059/logs/kafka-logs-0 not found, creating it. (kafka.log.LogManager)
-[2020-04-14 19:19:47,824] INFO Loading logs. (kafka.log.LogManager)
-[2020-04-14 19:19:47,829] INFO Logs loading complete in 5 ms. (kafka.log.LogManager)
-[2020-04-14 19:19:47,839] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
-[2020-04-14 19:19:47,841] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
-[2020-04-14 19:19:48,080] INFO Awaiting socket connections on 195.134.67.93:9090. (kafka.network.Acceptor)
-[2020-04-14 19:19:48,101] INFO [SocketServer brokerId=0] Created data-plane acceptor and processors for endpoint : EndPoint(195.134.67.93,9090,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.network.SocketServer)
-[2020-04-14 19:19:48,102] INFO [SocketServer brokerId=0] Started 1 acceptor threads for data-plane (kafka.network.SocketServer)
-[2020-04-14 19:19:48,121] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,121] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,122] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,122] INFO [ExpirationReaper-0-ElectPreferredLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,131] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
-[2020-04-14 19:19:48,155] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
-[2020-04-14 19:19:48,169] INFO Stat of the created znode at /brokers/ids/0 is: 24,24,1586891988164,1586891988164,1,0,0,72258529837318144,196,0,24
- (kafka.zk.KafkaZkClient)
-[2020-04-14 19:19:48,170] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(195.134.67.93,9090,ListenerName(PLAINTEXT),PLAINTEXT)), czxid (broker epoch): 24 (kafka.zk.KafkaZkClient)
-[2020-04-14 19:19:48,171] WARN No meta.properties file under dir /data/sdi1500059/logs/kafka-logs-0/meta.properties (kafka.server.BrokerMetadataCheckpoint)
-[2020-04-14 19:19:48,245] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,247] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,248] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:19:48,254] INFO Successfully created /controller_epoch with initial epoch 0 (kafka.zk.KafkaZkClient)
-[2020-04-14 19:19:48,266] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
-[2020-04-14 19:19:48,267] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
-[2020-04-14 19:19:48,271] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 4 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
-[2020-04-14 19:19:48,279] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:0,blockEndProducerId:999) by writing to Zk with path version 1 (kafka.coordinator.transaction.ProducerIdManager)
-[2020-04-14 19:19:48,298] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
-[2020-04-14 19:19:48,299] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
-[2020-04-14 19:19:48,300] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
-[2020-04-14 19:19:48,334] INFO Got user-level KeeperException when processing sessionid:0x100b6c002f20000 type:multi cxid:0x32 zxid:0x1c txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:19:48,335] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
-[2020-04-14 19:19:48,381] INFO [SocketServer brokerId=0] Started data-plane processors for 1 acceptors (kafka.network.SocketServer)
-[2020-04-14 19:19:48,394] INFO Kafka version: 2.3.0 (org.apache.kafka.common.utils.AppInfoParser)
-[2020-04-14 19:19:48,395] INFO Kafka commitId: fc1aaa116b661c8a (org.apache.kafka.common.utils.AppInfoParser)
-[2020-04-14 19:19:48,395] INFO Kafka startTimeMs: 1586891988383 (org.apache.kafka.common.utils.AppInfoParser)
-[2020-04-14 19:19:48,401] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
-[2020-04-14 19:27:51,787] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
-[2020-04-14 19:27:51,791] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
-[2020-04-14 19:27:51,794] INFO [KafkaServer id=0] Starting controlled shutdown (kafka.server.KafkaServer)
-[2020-04-14 19:27:51,813] INFO [KafkaServer id=0] Controlled shutdown succeeded (kafka.server.KafkaServer)
-[2020-04-14 19:27:51,816] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
-[2020-04-14 19:27:51,816] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
-[2020-04-14 19:27:51,816] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
-[2020-04-14 19:27:51,817] INFO [SocketServer brokerId=0] Stopping socket server request processors (kafka.network.SocketServer)
-[2020-04-14 19:27:51,826] INFO [SocketServer brokerId=0] Stopped socket server request processors (kafka.network.SocketServer)
-[2020-04-14 19:27:51,826] INFO [data-plane Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
-[2020-04-14 19:27:51,828] INFO [data-plane Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
-[2020-04-14 19:27:51,829] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
-[2020-04-14 19:27:51,830] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,015] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,015] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,021] INFO [TransactionCoordinator id=0] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
-[2020-04-14 19:27:52,023] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 0 (kafka.coordinator.transaction.ProducerIdManager)
-[2020-04-14 19:27:52,024] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
-[2020-04-14 19:27:52,024] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
-[2020-04-14 19:27:52,024] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
-[2020-04-14 19:27:52,024] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
-[2020-04-14 19:27:52,025] INFO [TransactionCoordinator id=0] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
-[2020-04-14 19:27:52,025] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
-[2020-04-14 19:27:52,025] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,216] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,216] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,216] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,416] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,416] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,418] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
-[2020-04-14 19:27:52,420] INFO [ReplicaManager broker=0] Shutting down (kafka.server.ReplicaManager)
-[2020-04-14 19:27:52,421] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
-[2020-04-14 19:27:52,421] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
-[2020-04-14 19:27:52,421] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
-[2020-04-14 19:27:52,423] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
-[2020-04-14 19:27:52,426] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
-[2020-04-14 19:27:52,427] INFO [ReplicaAlterLogDirsManager on broker 0] shutting down (kafka.server.ReplicaAlterLogDirsManager)
-[2020-04-14 19:27:52,427] INFO [ReplicaAlterLogDirsManager on broker 0] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
-[2020-04-14 19:27:52,427] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,499] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,499] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,499] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,700] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,700] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,700] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,900] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,900] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:52,901] INFO [ExpirationReaper-0-ElectPreferredLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:53,100] INFO [ExpirationReaper-0-ElectPreferredLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:53,101] INFO [ExpirationReaper-0-ElectPreferredLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2020-04-14 19:27:53,107] INFO [ReplicaManager broker=0] Shut down completely (kafka.server.ReplicaManager)
-[2020-04-14 19:27:53,108] INFO Shutting down. (kafka.log.LogManager)
-[2020-04-14 19:27:53,140] INFO Shutdown complete. (kafka.log.LogManager)
-[2020-04-14 19:27:53,146] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
-[2020-04-14 19:27:53,147] INFO Processed session termination for sessionid: 0x100b6c002f20000 (org.apache.zookeeper.server.PrepRequestProcessor)
-[2020-04-14 19:27:53,150] INFO Session: 0x100b6c002f20000 closed (org.apache.zookeeper.ZooKeeper)
-[2020-04-14 19:27:53,151] INFO EventThread shut down for session: 0x100b6c002f20000 (org.apache.zookeeper.ClientCnxn)
-[2020-04-14 19:27:53,151] INFO Closed socket connection for client /195.134.67.93:40942 which had sessionid 0x100b6c002f20000 (org.apache.zookeeper.server.NIOServerCnxn)
-[2020-04-14 19:27:53,152] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
-[2020-04-14 19:27:53,153] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:53,952] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:53,953] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:53,953] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:54,953] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:54,953] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:54,954] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:55,953] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:55,953] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2020-04-14 19:27:55,958] INFO [SocketServer brokerId=0] Shutting down socket server (kafka.network.SocketServer)
-[2020-04-14 19:27:55,985] INFO [SocketServer brokerId=0] Shutdown completed (kafka.network.SocketServer)
-[2020-04-14 19:27:55,986] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+[2020-04-15 11:07:16,234] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:16,236] INFO Closed socket connection for client /195.134.67.93:43744 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:16,868] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:16,868] INFO Closed socket connection for client /195.134.67.93:43746 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,476] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,477] INFO Closed socket connection for client /195.134.67.93:43750 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,968] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,968] INFO Closed socket connection for client /195.134.67.93:43748 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,968] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:17,969] INFO Closed socket connection for client /195.134.67.93:43742 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:18,106] INFO Accepted socket connection from /195.134.67.93:44008 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:18,107] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44008 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:18,108] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44008 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:18,294] INFO Accepted socket connection from /195.134.67.93:44010 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:18,295] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44010 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:18,296] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44010 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,189] INFO Accepted socket connection from /195.134.67.93:44012 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:19,189] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44012 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,190] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44012 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,733] WARN fsync-ing the write ahead log in SyncThread:0 took 5611ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:07:19,789] INFO Accepted socket connection from /195.134.67.93:44014 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:19,790] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44014 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,791] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44014 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,950] INFO Accepted socket connection from /195.134.67.93:44016 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:19,951] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44016 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,952] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44016 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:19,953] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20003 type:setData cxid:0x57 zxid:0x9b txntype:-1 reqpath:n/a Error Path:/brokers/topics/test-part-2-rep-5/partitions/1/state Error:KeeperErrorCode = BadVersion for /brokers/topics/test-part-2-rep-5/partitions/1/state (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:07:54,927] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:54,928] INFO Closed socket connection for client /195.134.67.93:44010 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:07:54,980] WARN fsync-ing the write ahead log in SyncThread:0 took 2503ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:07:56,682] INFO Accepted socket connection from /195.134.67.93:44046 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:07:56,682] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44046 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:56,683] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44046 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:07:56,684] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20002 type:setData cxid:0x5f zxid:0xab txntype:-1 reqpath:n/a Error Path:/brokers/topics/test-part-2-rep-5/partitions/0/state Error:KeeperErrorCode = BadVersion for /brokers/topics/test-part-2-rep-5/partitions/0/state (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:08:02,941] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:02,942] INFO Closed socket connection for client /195.134.67.93:44046 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:02,986] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:02,987] INFO Closed socket connection for client /195.134.67.93:44012 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:02,987] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:02,987] INFO Closed socket connection for client /195.134.67.93:44008 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:03,272] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:03,272] INFO Closed socket connection for client /195.134.67.93:44016 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:03,394] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:03,395] INFO Closed socket connection for client /195.134.67.93:44014 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:03,964] WARN fsync-ing the write ahead log in SyncThread:0 took 3200ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:04,097] INFO Accepted socket connection from /195.134.67.93:44054 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:04,098] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44054 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,098] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44054 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,469] INFO Accepted socket connection from /195.134.67.93:44056 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:04,469] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44056 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,470] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44056 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,492] INFO Accepted socket connection from /195.134.67.93:44058 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:04,492] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44058 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,493] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44058 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,493] INFO Accepted socket connection from /195.134.67.93:44060 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:04,493] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44060 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,494] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44060 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,686] INFO Accepted socket connection from /195.134.67.93:44062 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:04,687] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44062 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:04,688] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44062 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:08,099] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,099] INFO Closed socket connection for client /195.134.67.93:44054 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,472] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,473] INFO Closed socket connection for client /195.134.67.93:44056 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,495] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,495] INFO Closed socket connection for client /195.134.67.93:44058 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,495] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,495] INFO Closed socket connection for client /195.134.67.93:44060 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,630] WARN fsync-ing the write ahead log in SyncThread:0 took 4665ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:08,691] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:08,691] INFO Closed socket connection for client /195.134.67.93:44062 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:09,624] INFO Accepted socket connection from /195.134.67.93:44070 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:09,624] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44070 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:09,625] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44070 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:09,770] INFO Accepted socket connection from /195.134.67.93:44072 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:09,771] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44072 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:09,771] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44072 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:09,936] INFO Accepted socket connection from /195.134.67.93:44074 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:09,937] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44074 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:09,937] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44074 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:10,222] INFO Accepted socket connection from /195.134.67.93:44076 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:10,223] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44076 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:10,224] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44076 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:10,258] INFO Accepted socket connection from /195.134.67.93:44078 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:10,259] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44078 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:10,259] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44078 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:13,627] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:13,628] INFO Closed socket connection for client /195.134.67.93:44070 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:13,774] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:13,775] INFO Closed socket connection for client /195.134.67.93:44072 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:13,939] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:13,940] INFO Closed socket connection for client /195.134.67.93:44074 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:14,226] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:14,227] INFO Closed socket connection for client /195.134.67.93:44076 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:14,262] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:14,263] INFO Closed socket connection for client /195.134.67.93:44078 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:14,730] WARN fsync-ing the write ahead log in SyncThread:0 took 6099ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:14,893] INFO Accepted socket connection from /195.134.67.93:44080 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:14,894] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44080 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:14,894] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44080 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:15,498] INFO Accepted socket connection from /195.134.67.93:44082 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:15,498] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44082 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:15,498] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44082 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:15,547] INFO Accepted socket connection from /195.134.67.93:44084 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:15,548] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44084 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:15,548] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44084 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:16,016] INFO Accepted socket connection from /195.134.67.93:44086 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:16,017] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44086 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:16,017] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44086 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:16,038] INFO Accepted socket connection from /195.134.67.93:44088 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:16,038] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44088 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:16,038] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44088 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:16,111] INFO Accepted socket connection from /195.134.67.93:44090 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:16,113] INFO Client attempting to establish new session at /195.134.67.93:44090 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:18,897] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:18,898] INFO Closed socket connection for client /195.134.67.93:44080 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:19,500] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:19,501] INFO Closed socket connection for client /195.134.67.93:44082 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:19,551] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:19,551] INFO Closed socket connection for client /195.134.67.93:44084 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:20,020] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:20,020] INFO Closed socket connection for client /195.134.67.93:44086 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:20,039] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:20,040] INFO Closed socket connection for client /195.134.67.93:44088 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:20,941] INFO Accepted socket connection from /195.134.67.93:44092 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:20,941] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44092 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:20,942] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44092 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,096] INFO Accepted socket connection from /195.134.67.93:44094 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:21,097] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44094 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,097] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44094 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,453] INFO Accepted socket connection from /195.134.67.93:44096 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:21,453] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44096 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,454] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44096 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,597] INFO Accepted socket connection from /195.134.67.93:44098 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:21,598] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44098 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,598] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44098 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,956] INFO Accepted socket connection from /195.134.67.93:44100 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:21,957] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44100 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:21,958] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44100 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:24,943] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:24,944] INFO Closed socket connection for client /195.134.67.93:44092 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,100] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,100] INFO Closed socket connection for client /195.134.67.93:44094 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,457] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,457] INFO Closed socket connection for client /195.134.67.93:44096 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,600] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,600] INFO Closed socket connection for client /195.134.67.93:44098 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,959] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:25,959] INFO Closed socket connection for client /195.134.67.93:44100 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:26,178] INFO Accepted socket connection from /195.134.67.93:44102 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:26,179] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44102 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:26,179] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44102 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:26,409] INFO Accepted socket connection from /195.134.67.93:44104 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:26,410] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44104 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:26,410] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44104 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,018] INFO Accepted socket connection from /195.134.67.93:44106 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:27,018] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44106 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,019] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44106 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,316] INFO Accepted socket connection from /195.134.67.93:44108 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:27,317] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44108 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,318] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44108 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,502] INFO Accepted socket connection from /195.134.67.93:44110 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:27,503] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44110 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:27,503] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44110 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:30,180] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:30,181] INFO Closed socket connection for client /195.134.67.93:44102 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:30,411] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:30,412] INFO Closed socket connection for client /195.134.67.93:44104 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,021] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,021] INFO Closed socket connection for client /195.134.67.93:44106 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,321] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,321] INFO Closed socket connection for client /195.134.67.93:44108 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,505] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,506] INFO Closed socket connection for client /195.134.67.93:44110 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:31,557] INFO Accepted socket connection from /195.134.67.93:44112 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:31,558] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44112 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:31,558] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44112 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:32,282] INFO Accepted socket connection from /195.134.67.93:44114 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:32,282] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44114 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:32,283] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44114 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:32,369] INFO Accepted socket connection from /195.134.67.93:44116 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:32,369] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44116 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:32,370] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44116 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:33,117] INFO Accepted socket connection from /195.134.67.93:44118 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:33,118] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44118 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:33,118] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44118 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:33,366] INFO Accepted socket connection from /195.134.67.93:44120 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:33,366] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44120 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:33,367] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44120 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:35,020] WARN fsync-ing the write ahead log in SyncThread:0 took 20289ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:35,559] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:35,560] INFO Closed socket connection for client /195.134.67.93:44112 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:36,286] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:36,287] INFO Closed socket connection for client /195.134.67.93:44114 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:36,371] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:36,372] INFO Closed socket connection for client /195.134.67.93:44116 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:36,890] INFO Accepted socket connection from /195.134.67.93:44122 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:36,890] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44122 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:36,891] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44122 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:36,924] WARN fsync-ing the write ahead log in SyncThread:0 took 1635ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:36,925] INFO Established session 0x100b9fa94f20009 with negotiated timeout 30000 for client /195.134.67.93:44090 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:37,491] INFO Accepted socket connection from /195.134.67.93:44124 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:37,491] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44124 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:37,493] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44124 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:38,038] INFO Accepted socket connection from /195.134.67.93:44126 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:38,038] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44126 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:38,039] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44126 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:38,077] INFO Processed session termination for sessionid: 0x100b9fa94f20009 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:08:40,923] WARN fsync-ing the write ahead log in SyncThread:0 took 2859ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:41,090] INFO Closed socket connection for client /195.134.67.93:44090 which had sessionid 0x100b9fa94f20009 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:42,264] INFO Accepted socket connection from /195.134.67.93:44128 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:42,266] INFO Client attempting to establish new session at /195.134.67.93:44128 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:42,601] INFO Established session 0x100b9fa94f2000a with negotiated timeout 30000 for client /195.134.67.93:44128 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:42,827] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f2000a type:setData cxid:0x8 zxid:0xd2 txntype:-1 reqpath:n/a Error Path:/config/topics/test-part-5-rep-5 Error:KeeperErrorCode = NoNode for /config/topics/test-part-5-rep-5 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:08:43,124] INFO Processed session termination for sessionid: 0x100b9fa94f2000a (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:08:43,301] INFO Closed socket connection for client /195.134.67.93:44128 which had sessionid 0x100b9fa94f2000a (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,310] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,311] INFO Closed socket connection for client /195.134.67.93:44126 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,320] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,321] INFO Closed socket connection for client /195.134.67.93:44120 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,322] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,323] INFO Closed socket connection for client /195.134.67.93:44122 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,435] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,436] INFO Closed socket connection for client /195.134.67.93:44118 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,436] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,436] INFO Closed socket connection for client /195.134.67.93:44124 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:08:57,704] WARN fsync-ing the write ahead log in SyncThread:0 took 4271ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:08:58,453] INFO Accepted socket connection from /195.134.67.93:44134 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:58,454] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44134 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,454] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44134 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,612] INFO Accepted socket connection from /195.134.67.93:44144 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:58,612] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44144 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,613] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44144 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,613] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20000 type:multi cxid:0x111 zxid:0xe3 txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/brokers/topics/test-part-2-rep-5/partitions/0 Error:KeeperErrorCode = NoNode for /brokers/topics/test-part-2-rep-5/partitions/0 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:08:58,785] INFO Accepted socket connection from /195.134.67.93:44154 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:58,785] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44154 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,785] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44154 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,918] INFO Accepted socket connection from /195.134.67.93:44164 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:58,918] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44164 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:58,919] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44164 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:59,167] INFO Accepted socket connection from /195.134.67.93:44174 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:08:59,167] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44174 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:08:59,168] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44174 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:45,050] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,051] INFO Closed socket connection for client /195.134.67.93:44134 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,182] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,182] INFO Closed socket connection for client /195.134.67.93:44154 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,507] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,507] INFO Closed socket connection for client /195.134.67.93:44144 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,795] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,795] INFO Closed socket connection for client /195.134.67.93:44174 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,912] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:45,913] INFO Closed socket connection for client /195.134.67.93:44164 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:46,738] INFO Accepted socket connection from /195.134.67.93:44576 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:14:46,738] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44576 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:46,739] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44576 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:46,853] INFO Accepted socket connection from /195.134.67.93:44578 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:14:46,854] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44578 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:46,854] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44578 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:46,855] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20002 type:setData cxid:0x7a zxid:0xfa txntype:-1 reqpath:n/a Error Path:/brokers/topics/test-part-5-rep-5/partitions/4/state Error:KeeperErrorCode = BadVersion for /brokers/topics/test-part-5-rep-5/partitions/4/state (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:14:47,584] INFO Accepted socket connection from /195.134.67.93:44580 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:14:47,585] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44580 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:47,585] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44580 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:47,604] INFO Accepted socket connection from /195.134.67.93:44582 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:14:47,604] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44582 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:47,605] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44582 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:47,653] INFO Accepted socket connection from /195.134.67.93:44584 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:14:47,653] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44584 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:47,654] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44584 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:14:48,086] WARN fsync-ing the write ahead log in SyncThread:0 took 3218ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:14:51,379] WARN fsync-ing the write ahead log in SyncThread:0 took 2951ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:14:55,066] WARN fsync-ing the write ahead log in SyncThread:0 took 2653ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:14:59,067] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,068] INFO Closed socket connection for client /195.134.67.93:44578 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,068] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,068] INFO Closed socket connection for client /195.134.67.93:44576 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,068] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,069] INFO Closed socket connection for client /195.134.67.93:44584 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,069] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,069] INFO Closed socket connection for client /195.134.67.93:44580 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,069] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:14:59,069] INFO Closed socket connection for client /195.134.67.93:44582 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:15:00,256] INFO Accepted socket connection from /195.134.67.93:44586 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:15:00,256] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44586 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,257] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44586 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,555] INFO Accepted socket connection from /195.134.67.93:44588 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:15:00,556] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44588 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,556] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44588 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,725] INFO Accepted socket connection from /195.134.67.93:44590 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:15:00,726] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44590 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,726] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44590 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,727] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20000 type:multi cxid:0x141 zxid:0xfd txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/isr_change_notification/isr_change_0000000032 Error:KeeperErrorCode = NoNode for /isr_change_notification/isr_change_0000000032 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:15:00,829] INFO Accepted socket connection from /195.134.67.93:44592 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:15:00,829] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44592 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,830] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44592 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,845] INFO Accepted socket connection from /195.134.67.93:44594 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:15:00,845] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44594 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:00,845] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44594 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:15:02,988] WARN fsync-ing the write ahead log in SyncThread:0 took 7918ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:32:21,270] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,271] INFO Closed socket connection for client /195.134.67.93:44586 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,538] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,538] INFO Closed socket connection for client /195.134.67.93:44592 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,614] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,615] INFO Closed socket connection for client /195.134.67.93:44588 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:32:21,811] WARN fsync-ing the write ahead log in SyncThread:0 took 2773ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:32:22,628] INFO Accepted socket connection from /195.134.67.93:44656 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:32:22,628] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44656 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:22,628] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44656 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:22,915] INFO Accepted socket connection from /195.134.67.93:44658 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:32:22,915] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44658 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:22,916] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44658 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:23,174] INFO Accepted socket connection from /195.134.67.93:44660 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:32:23,175] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44660 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:23,175] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44660 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:32:23,175] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20001 type:setData cxid:0x124 zxid:0x114 txntype:-1 reqpath:n/a Error Path:/brokers/topics/test-part-5-rep-5/partitions/3/state Error:KeeperErrorCode = BadVersion for /brokers/topics/test-part-5-rep-5/partitions/3/state (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:33:07,486] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:07,487] INFO Closed socket connection for client /195.134.67.93:44658 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:07,707] WARN fsync-ing the write ahead log in SyncThread:0 took 2421ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:33:08,555] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:08,555] INFO Closed socket connection for client /195.134.67.93:44656 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:09,139] INFO Accepted socket connection from /195.134.67.93:44710 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:09,139] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44710 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:09,140] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44710 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:09,166] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:09,166] INFO Closed socket connection for client /195.134.67.93:44660 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:09,275] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:09,275] INFO Closed socket connection for client /195.134.67.93:44594 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:10,016] INFO Accepted socket connection from /195.134.67.93:44712 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:10,016] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44712 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:10,016] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44712 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:10,623] INFO Accepted socket connection from /195.134.67.93:44714 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:10,623] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44714 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:10,623] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44714 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:10,725] INFO Accepted socket connection from /195.134.67.93:44716 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:10,725] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44716 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:10,725] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44716 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:11,076] WARN fsync-ing the write ahead log in SyncThread:0 took 3368ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:33:14,626] WARN Unable to read additional data from client sessionid 0x100b9fa94f20001, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:14,626] INFO Closed socket connection for client /195.134.67.93:44714 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:14,727] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:14,728] INFO Closed socket connection for client /195.134.67.93:44716 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,078] WARN Unable to read additional data from client sessionid 0x100b9fa94f20000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,078] INFO Closed socket connection for client /195.134.67.93:44590 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,079] WARN Unable to read additional data from client sessionid 0x100b9fa94f20004, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,079] INFO Closed socket connection for client /195.134.67.93:44710 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,079] WARN Unable to read additional data from client sessionid 0x100b9fa94f20003, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,080] INFO Closed socket connection for client /195.134.67.93:44712 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:15,497] WARN fsync-ing the write ahead log in SyncThread:0 took 4420ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:33:16,192] INFO Accepted socket connection from /195.134.67.93:44718 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:16,192] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44718 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,193] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44718 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,636] INFO Accepted socket connection from /195.134.67.93:44720 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:16,636] INFO Client attempting to renew session 0x100b9fa94f20003 at /195.134.67.93:44720 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,637] INFO Established session 0x100b9fa94f20003 with negotiated timeout 6000 for client /195.134.67.93:44720 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,639] INFO Accepted socket connection from /195.134.67.93:44722 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:16,640] INFO Client attempting to renew session 0x100b9fa94f20001 at /195.134.67.93:44722 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,640] INFO Established session 0x100b9fa94f20001 with negotiated timeout 6000 for client /195.134.67.93:44722 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,641] INFO Accepted socket connection from /195.134.67.93:44724 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:16,641] INFO Client attempting to renew session 0x100b9fa94f20004 at /195.134.67.93:44724 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,642] INFO Established session 0x100b9fa94f20004 with negotiated timeout 6000 for client /195.134.67.93:44724 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,862] INFO Accepted socket connection from /195.134.67.93:44726 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:16,862] INFO Client attempting to renew session 0x100b9fa94f20000 at /195.134.67.93:44726 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:16,862] INFO Established session 0x100b9fa94f20000 with negotiated timeout 6000 for client /195.134.67.93:44726 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:18,122] WARN fsync-ing the write ahead log in SyncThread:0 took 1483ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:33:20,196] WARN Unable to read additional data from client sessionid 0x100b9fa94f20002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:20,197] INFO Closed socket connection for client /195.134.67.93:44718 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:33:21,370] WARN fsync-ing the write ahead log in SyncThread:0 took 3237ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:33:21,727] INFO Accepted socket connection from /195.134.67.93:44740 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2020-04-15 11:33:21,727] INFO Client attempting to renew session 0x100b9fa94f20002 at /195.134.67.93:44740 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:21,727] INFO Established session 0x100b9fa94f20002 with negotiated timeout 6000 for client /195.134.67.93:44740 (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-04-15 11:33:23,484] WARN fsync-ing the write ahead log in SyncThread:0 took 2108ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:35:35,795] WARN fsync-ing the write ahead log in SyncThread:0 took 1813ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2020-04-15 11:37:26,163] INFO Processed session termination for sessionid: 0x100b9fa94f20001 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:26,166] INFO Closed socket connection for client /195.134.67.93:44722 which had sessionid 0x100b9fa94f20001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:37:27,582] INFO Processed session termination for sessionid: 0x100b9fa94f20000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:27,585] INFO Closed socket connection for client /195.134.67.93:44726 which had sessionid 0x100b9fa94f20000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:37:27,601] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20003 type:multi cxid:0x8f zxid:0x166 txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/controller Error:KeeperErrorCode = NodeExists for /controller (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:27,601] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20002 type:multi cxid:0x91 zxid:0x167 txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/controller Error:KeeperErrorCode = NodeExists for /controller (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:27,683] INFO Got user-level KeeperException when processing sessionid:0x100b9fa94f20004 type:multi cxid:0x2c9 zxid:0x168 txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:29,197] INFO Processed session termination for sessionid: 0x100b9fa94f20002 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:29,199] INFO Closed socket connection for client /195.134.67.93:44740 which had sessionid 0x100b9fa94f20002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:37:30,008] INFO Processed session termination for sessionid: 0x100b9fa94f20003 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:30,010] INFO Closed socket connection for client /195.134.67.93:44720 which had sessionid 0x100b9fa94f20003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2020-04-15 11:37:46,765] INFO Processed session termination for sessionid: 0x100b9fa94f20004 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2020-04-15 11:37:46,767] INFO Closed socket connection for client /195.134.67.93:44724 which had sessionid 0x100b9fa94f20004 (org.apache.zookeeper.server.NIOServerCnxn)
