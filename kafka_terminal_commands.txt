@@ -1,5 +1,6 @@
 1)Zookeeper Server:
     ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+    ./bin/zookeeper-server-stop.sh (stop server if throws java.net.BindException: Address already in use), netstat -ant | grep :2181
 
 2)Kafka Server:
     ./bin/kafka-server-start.sh ../server.properties/server-0.properties
