@@ -40,7 +40,10 @@ if __name__ == '__main__':
 
         # get last line of file
         with open(directory+entry, 'r') as file:
-            last_line = list(file)[-1]
+            try:
+                last_line = list(file)[-1]
+            except IndexError:
+                print("IndexError at file: {}, while trying to fetch last line.".format(directory+entry))
         
         try:
             # split last line of file
