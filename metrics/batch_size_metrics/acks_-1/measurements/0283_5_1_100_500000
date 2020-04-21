@@ -1,10 +1,9 @@
-623369 records sent, 124648.9 records/sec (11.89 MB/sec), 1554.1 ms avg latency, 2451.0 ms max latency.
-554332 records sent, 109921.1 records/sec (10.48 MB/sec), 2620.7 ms avg latency, 2940.0 ms max latency.
-522544 records sent, 104051.0 records/sec (9.92 MB/sec), 2884.2 ms avg latency, 3065.0 ms max latency.
-499778 records sent, 99597.1 records/sec (9.50 MB/sec), 3018.4 ms avg latency, 3110.0 ms max latency.
-504351 records sent, 100568.5 records/sec (9.59 MB/sec), 3048.1 ms avg latency, 3111.0 ms max latency.
-531643 records sent, 105778.6 records/sec (10.09 MB/sec), 2880.2 ms avg latency, 3032.0 ms max latency.
-413494 records sent, 82075.0 records/sec (7.83 MB/sec), 3672.8 ms avg latency, 4323.0 ms max latency.
-599866 records sent, 119542.8 records/sec (11.40 MB/sec), 2646.3 ms avg latency, 3990.0 ms max latency.
-572596 records sent, 113475.2 records/sec (10.82 MB/sec), 2604.0 ms avg latency, 2812.0 ms max latency.
-5000000 records sent, 106591.626162 records/sec (10.17 MB/sec), 2720.99 ms avg latency, 4323.00 ms max latency, 2838 ms 50th, 3978 ms 95th, 4225 ms 99th, 4292 ms 99.9th.
+515625 records sent, 102693.7 records/sec (9.79 MB/sec), 1594.4 ms avg latency, 3492.0 ms max latency.
+754389 records sent, 149324.8 records/sec (14.24 MB/sec), 2262.7 ms avg latency, 3484.0 ms max latency.
+681681 records sent, 135684.9 records/sec (12.94 MB/sec), 2227.6 ms avg latency, 2311.0 ms max latency.
+636265 records sent, 126999.0 records/sec (12.11 MB/sec), 2324.7 ms avg latency, 2468.0 ms max latency.
+599830 records sent, 119942.0 records/sec (11.44 MB/sec), 2516.5 ms avg latency, 2692.0 ms max latency.
+499759 records sent, 99178.2 records/sec (9.46 MB/sec), 2808.3 ms avg latency, 3614.0 ms max latency.
+563462 records sent, 112467.5 records/sec (10.73 MB/sec), 2641.8 ms avg latency, 3402.0 ms max latency.
+699804 records sent, 139486.5 records/sec (13.30 MB/sec), 2437.3 ms avg latency, 3236.0 ms max latency.
+5000000 records sent, 123359.321030 records/sec (11.76 MB/sec), 2348.89 ms avg latency, 3614.00 ms max latency, 2257 ms 50th, 3429 ms 95th, 3506 ms 99th, 3587 ms 99.9th.
