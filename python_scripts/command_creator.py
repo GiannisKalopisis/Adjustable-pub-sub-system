@@ -11,7 +11,8 @@ parameterDict = {
     "batch.size": [16384, 50000, 100000, 200000, 500000],
     "buffer.memory": [10000000, 33554432, 100000000, 200000000],
     "linger.ms": [0, 1, 2, 5, 10],
-    "max.request.size": [500000, 1048576, 2000000, 5000000, 10000000]
+    "max.request.size": [500000, 1048576, 2000000, 5000000, 10000000],
+    "message.size": [10, 20, 50, 100, 200, 500, 1000]
 }
 
 
@@ -38,18 +39,27 @@ def parameterChange(parameter, size, config_type, rf):
         "../test_properties_files/{}_properties/{}-{}.properties ; ".format(parameter, size, config_type, config_type,rf))
 
 
-def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size, folder):
-    print("./bin/kafka-producer-perf-test.sh "
-        "--topic test-part-{}-rep-{} "
-        "--num-records {} --record-size {} --throughput -1 "
-        "--producer.config ../test_properties_files/producer_properties/producer-{}.properties "
-        "> {}/{:04d}_{}_{}_{}_{} ; "\
-        .format(part, rf, record_num, mes_size, rf, folder, counter, rf, part, mes_size, measurement_size))
+def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size, folder, is_message_size):
+
+    if not is_message_size:
+        print("./bin/kafka-producer-perf-test.sh "
+            "--topic test-part-{}-rep-{} "
+            "--num-records {} --record-size {} --throughput -1 "
+            "--producer.config ../test_properties_files/producer_properties/producer-{}.properties "
+            "> {}/{:04d}_{}_{}_{}_{} ; "\
+            .format(part, rf, record_num, mes_size, rf, folder, counter, rf, part, mes_size, measurement_size))
+    else:
+        print("./bin/kafka-producer-perf-test.sh "
+            "--topic test-part-{}-rep-{} "
+            "--num-records {} --record-size {} --throughput -1 "
+            "--producer.config ../test_properties_files/producer_properties/producer-{}.properties "
+            "> {}/{:04d}_{}_{}_{} ; "\
+            .format(part, rf, record_num, mes_size, rf, folder, counter, rf, part, mes_size))
 
 
 #measurement_type = "batch.size"
 #parameter_type = "producer/server"
-def printCommands(parameter_list, measurement_type , parameter_type, folder):
+def printCommands(parameter_list, measurement_type , parameter_type, folder, is_message_size):
 
     parameter = parameter_list
 
@@ -61,16 +71,20 @@ def printCommands(parameter_list, measurement_type , parameter_type, folder):
                 partitionCommands(partition[partition.index(part) - 1], replication[replication.index(rf) - 1], rf, part, True)
             else:
                 partitionCommands(partition[partition.index(part) - 1], replication[replication.index(rf) - 1], rf, part, False)
-            for mes in message:
-                for par in parameter:
-                    parameterChange(measurement_type, par, parameter_type, rf)
+            # not message size, needs to change parameter to check
+            if not is_message_size:
+                for mes in message:    
+                    for par in parameter:
+                        parameterChange(measurement_type, par, parameter_type, rf)
+                        for i in range(1,4):
+                            kafkaCommand(part, rf, int(total_bytes/mes), mes, counter, par, folder, is_message_size)
+                            counter += 1
+            # message size is the parameter we check
+            else:
+                for mes in parameter:
                     for i in range(1,4):
-                        kafkaCommand(part, rf, int(total_bytes/mes), mes, counter, par, folder)
+                        kafkaCommand(part, rf, int(total_bytes/mes), mes, counter, None, folder, is_message_size)
                         counter += 1
-
-
-def bufferMemory():
-    print("buffer.memory is not implemented yet.")
 
 
 def wrongArgumentsFunc():
@@ -100,13 +114,15 @@ if __name__ == '__main__':
     folder = removeLastBackslash(sys.argv[2])
 
     if test_parameter == "batch.size":
-        printCommands(parameterDict["batch.size"], "batch.size", "producer", folder)
+        printCommands(parameterDict["batch.size"], "batch.size", "producer", folder, False)
     elif test_parameter == "buffer.memory":
-        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", folder)
+        printCommands(parameterDict["buffer.memory"], "buffer.memory", "producer", folder, False)
     elif test_parameter == "linger.ms":
-        printCommands(parameterDict["linger.ms"], "linger.ms", "producer", folder)
+        printCommands(parameterDict["linger.ms"], "linger.ms", "producer", folder, False)
     elif test_parameter == "max.request.size":
-        printCommands(parameterDict["max.request.size"], "max.request.size", "producer", folder)
+        printCommands(parameterDict["max.request.size"], "max.request.size", "producer", folder, False)
+    elif test_parameter == "message.size":
+        printCommands(parameterDict["message.size"], "message.size", "producer", folder, True)       
     else:
         wrongArgumentsFunc()
     
