@@ -1,0 +1,7 @@
+3357435 records sent, 670816.2 records/sec (12.79 MB/sec), 368.2 ms avg latency, 696.0 ms max latency.
+3875040 records sent, 775008.0 records/sec (14.78 MB/sec), 776.5 ms avg latency, 1012.0 ms max latency.
+3942900 records sent, 788580.0 records/sec (15.04 MB/sec), 765.9 ms avg latency, 1040.0 ms max latency.
+3839940 records sent, 753520.4 records/sec (14.37 MB/sec), 1161.1 ms avg latency, 1393.0 ms max latency.
+3453235 records sent, 690647.0 records/sec (13.17 MB/sec), 1562.1 ms avg latency, 1946.0 ms max latency.
+3832880 records sent, 766576.0 records/sec (14.62 MB/sec), 1620.6 ms avg latency, 2267.0 ms max latency.
+25000000 records sent, 731678.763756 records/sec (13.96 MB/sec), 1089.73 ms avg latency, 2267.00 ms max latency, 1134 ms 50th, 1993 ms 95th, 2244 ms 99th, 2265 ms 99.9th.
