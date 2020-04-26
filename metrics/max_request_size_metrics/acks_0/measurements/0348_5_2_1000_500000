@@ -1,0 +1,20 @@
+248945 records sent, 37446.6 records/sec (35.71 MB/sec), 392.7 ms avg latency, 3555.0 ms max latency.
+7040 records sent, 1196.1 records/sec (1.14 MB/sec), 3563.7 ms avg latency, 9444.0 ms max latency.
+912 records sent, 140.6 records/sec (0.13 MB/sec), 12167.2 ms avg latency, 15931.0 ms max latency.
+41281 records sent, 8221.7 records/sec (7.84 MB/sec), 7573.5 ms avg latency, 20813.0 ms max latency.
+8656 records sent, 1520.7 records/sec (1.45 MB/sec), 12033.0 ms avg latency, 26407.0 ms max latency.
+11376 records sent, 2163.6 records/sec (2.06 MB/sec), 15867.1 ms avg latency, 29456.0 ms max latency.
+3216 records sent, 461.1 records/sec (0.44 MB/sec), 8319.2 ms avg latency, 35198.0 ms max latency.
+384 records sent, 56.0 records/sec (0.05 MB/sec), 14721.8 ms avg latency, 35201.0 ms max latency.
+704 records sent, 109.5 records/sec (0.10 MB/sec), 16243.5 ms avg latency, 36238.0 ms max latency.
+1056 records sent, 162.1 records/sec (0.15 MB/sec), 20080.6 ms avg latency, 42745.0 ms max latency.
+63984 records sent, 12796.8 records/sec (12.20 MB/sec), 21070.3 ms avg latency, 46398.0 ms max latency.
+81332 records sent, 16240.4 records/sec (15.49 MB/sec), 1301.1 ms avg latency, 4498.0 ms max latency.
+795 records sent, 87.7 records/sec (0.08 MB/sec), 5004.1 ms avg latency, 13497.0 ms max latency.
+176 records sent, 24.1 records/sec (0.02 MB/sec), 13586.3 ms avg latency, 20778.0 ms max latency.
+7520 records sent, 1377.5 records/sec (1.31 MB/sec), 23848.4 ms avg latency, 25366.0 ms max latency.
+6848 records sent, 1143.4 records/sec (1.09 MB/sec), 27261.0 ms avg latency, 30864.0 ms max latency.
+3664 records sent, 632.5 records/sec (0.60 MB/sec), 33327.0 ms avg latency, 36359.0 ms max latency.
+5280 records sent, 989.5 records/sec (0.94 MB/sec), 38099.5 ms avg latency, 41290.0 ms max latency.
+4400 records sent, 860.6 records/sec (0.82 MB/sec), 42709.1 ms avg latency, 45709.0 ms max latency.
+500000 records sent, 4299.632811 records/sec (4.10 MB/sec), 6488.17 ms avg latency, 46398.00 ms max latency, 422 ms 50th, 41504 ms 95th, 46133 ms 99th, 46367 ms 99.9th.
