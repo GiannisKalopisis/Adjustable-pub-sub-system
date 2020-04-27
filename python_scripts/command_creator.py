@@ -175,7 +175,24 @@ def removeLastBackslash(folder):
     return folder
 
 
+def checkParametersExistence(parameters):
+    for param in parameters:
+        if not param in smallerParameterDict:
+            print("Error at multiple parameters.")
+            wrongArgumentsFunc()
+            sys.exit()
+
+
 if __name__ == '__main__':
+
+    #
+    # Parameters for single variable:   1) test_parameter
+    #                                   2) folder
+    #
+    # Parameters for multiple variables: 1) -m
+    #                                    2) test_parameter
+    #                                    3) folder
+    #
 
     if len(sys.argv) <= 2:
         noArgumentsFunc()
@@ -187,8 +204,9 @@ if __name__ == '__main__':
         printCommands(parameterDict[test_parameter], test_parameter, "producer", removeLastBackslash(sys.argv[2]), test_parameter == "message.size")
     elif test_parameter == "-m":
         parameters = sys.argv[2].split('+')
+        checkParametersExistence(parameters)
         print(parameters)
-        multipleParametersPrintCommands(parameterDict[parameters[0]], parameterDict[parameters[1]], parameters[0], parameters[1], "producer", removeLastBackslash(sys.argv[3]))
+        multipleParametersPrintCommands(smallerParameterDict[parameters[0]], smallerParameterDict[parameters[1]], parameters[0], parameters[1], "producer", removeLastBackslash(sys.argv[3]))
     else:
         wrongArgumentsFunc()
         printUsage()
