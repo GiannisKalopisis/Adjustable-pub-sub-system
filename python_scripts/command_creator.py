@@ -17,10 +17,10 @@ parameterDict = {
 
 
 smallerParameterDict = {
-    "batch.size": [16384, 100000, 200000, 500000],
+    "batch.size": [16384, 200000, 500000],
     "buffer.memory": [33554432, 100000000, 200000000],
     "linger.ms": [0, 2, 5],
-    "max.request.size": [1048576, 2000000, 5000000]
+    "max.request.size": [1048576, 5000000, 10000000]
     # "message.size": [10, 20, 50, 100, 200, 500, 1000]
 }
 
@@ -32,7 +32,6 @@ def printBrokers(from_broker, to_broker):
 
 
 def partitionCommands(previous_part, previous_rf, rf, part, first):
-
     if first:
         print("./bin/kafka-topics.sh --delete --zookeeper 195.134.67.93:2181 " 
             "--topic test-part-{}-rep-{} ; ".format(previous_part, previous_rf))
@@ -49,7 +48,6 @@ def parameterChange(parameter, size, config_type, rf):
 
 
 def kafkaCommand(part, rf, record_num, mes_size, counter, measurement_size_1, measurement_size_2, folder, is_message_size, multiple):
-
     # 2 parameters testing
     if multiple:
         print("./bin/kafka-producer-perf-test.sh "
