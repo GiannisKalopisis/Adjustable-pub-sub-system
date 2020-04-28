@@ -205,7 +205,6 @@ if __name__ == '__main__':
     elif test_parameter == "-m":
         parameters = sys.argv[2].split('+')
         checkParametersExistence(parameters)
-        print(parameters)
         multipleParametersPrintCommands(smallerParameterDict[parameters[0]], smallerParameterDict[parameters[1]], parameters[0], parameters[1], "producer", removeLastBackslash(sys.argv[3]))
     else:
         wrongArgumentsFunc()
