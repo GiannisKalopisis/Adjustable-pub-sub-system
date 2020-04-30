@@ -1,0 +1,2 @@
+4416308 records sent, 883085.0 records/sec (84.22 MB/sec), 115.2 ms avg latency, 825.0 ms max latency.
+5000000 records sent, 847026.935457 records/sec (80.78 MB/sec), 149.38 ms avg latency, 825.00 ms max latency, 59 ms 50th, 667 ms 95th, 782 ms 99th, 821 ms 99.9th.
