@@ -1,0 +1,6 @@
+200726 records sent, 40145.2 records/sec (3.83 MB/sec), 2594.1 ms avg latency, 4230.0 ms max latency.
+426388 records sent, 85277.6 records/sec (8.13 MB/sec), 4519.3 ms avg latency, 6186.0 ms max latency.
+551448 records sent, 110289.6 records/sec (10.52 MB/sec), 2774.9 ms avg latency, 3250.0 ms max latency.
+1098308 records sent, 219661.6 records/sec (20.95 MB/sec), 1574.1 ms avg latency, 2746.0 ms max latency.
+1554148 records sent, 310829.6 records/sec (29.64 MB/sec), 980.7 ms avg latency, 1057.0 ms max latency.
+5000000 records sent, 174764.068508 records/sec (16.67 MB/sec), 1668.00 ms avg latency, 6186.00 ms max latency, 1011 ms 50th, 4423 ms 95th, 5711 ms 99th, 6108 ms 99.9th.
