@@ -1,0 +1,20 @@
+34057 records sent, 4841.1 records/sec (4.62 MB/sec), 63.6 ms avg latency, 6867.0 ms max latency.
+4747 records sent, 862.0 records/sec (0.82 MB/sec), 4650.1 ms avg latency, 12336.0 ms max latency.
+11873 records sent, 1545.4 records/sec (1.47 MB/sec), 6963.8 ms avg latency, 19971.0 ms max latency.
+10491 records sent, 1953.3 records/sec (1.86 MB/sec), 10840.2 ms avg latency, 23263.0 ms max latency.
+2175 records sent, 348.2 records/sec (0.33 MB/sec), 10276.7 ms avg latency, 31534.0 ms max latency.
+5144 records sent, 905.5 records/sec (0.86 MB/sec), 17240.6 ms avg latency, 37200.0 ms max latency.
+26127 records sent, 4099.6 records/sec (3.91 MB/sec), 19842.0 ms avg latency, 43514.0 ms max latency.
+3562 records sent, 600.8 records/sec (0.57 MB/sec), 22468.3 ms avg latency, 49433.0 ms max latency.
+6325 records sent, 1144.4 records/sec (1.09 MB/sec), 22352.3 ms avg latency, 49438.0 ms max latency.
+12658 records sent, 2507.5 records/sec (2.39 MB/sec), 21674.8 ms avg latency, 45757.0 ms max latency.
+12464 records sent, 2481.9 records/sec (2.37 MB/sec), 20999.1 ms avg latency, 44361.0 ms max latency.
+40876 records sent, 8175.2 records/sec (7.80 MB/sec), 12737.3 ms avg latency, 33588.0 ms max latency.
+32929 records sent, 5896.0 records/sec (5.62 MB/sec), 5380.7 ms avg latency, 16235.0 ms max latency.
+33248 records sent, 5215.4 records/sec (4.97 MB/sec), 5045.1 ms avg latency, 11029.0 ms max latency.
+47105 records sent, 8950.2 records/sec (8.54 MB/sec), 5460.9 ms avg latency, 12469.0 ms max latency.
+38001 records sent, 5459.9 records/sec (5.21 MB/sec), 3478.5 ms avg latency, 9967.0 ms max latency.
+5538 records sent, 1096.0 records/sec (1.05 MB/sec), 6111.3 ms avg latency, 14412.0 ms max latency.
+11083 records sent, 1970.3 records/sec (1.88 MB/sec), 7298.0 ms avg latency, 19132.0 ms max latency.
+125883 records sent, 24996.6 records/sec (23.84 MB/sec), 4794.2 ms avg latency, 19428.0 ms max latency.
+500000 records sent, 4453.708157 records/sec (4.25 MB/sec), 7295.39 ms avg latency, 49438.00 ms max latency, 1610 ms 50th, 39279 ms 95th, 44358 ms 99th, 46191 ms 99.9th.
