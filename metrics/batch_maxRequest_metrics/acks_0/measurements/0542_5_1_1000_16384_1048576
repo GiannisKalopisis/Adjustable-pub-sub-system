@@ -1,0 +1,20 @@
+79697 records sent, 15939.4 records/sec (15.20 MB/sec), 914.3 ms avg latency, 3112.0 ms max latency.
+21152 records sent, 4162.1 records/sec (3.97 MB/sec), 5081.5 ms avg latency, 7521.0 ms max latency.
+16272 records sent, 3242.7 records/sec (3.09 MB/sec), 8358.2 ms avg latency, 9394.0 ms max latency.
+17872 records sent, 3570.1 records/sec (3.40 MB/sec), 9936.4 ms avg latency, 10575.0 ms max latency.
+18192 records sent, 3567.1 records/sec (3.40 MB/sec), 9318.3 ms avg latency, 9827.0 ms max latency.
+19216 records sent, 3731.3 records/sec (3.56 MB/sec), 8617.0 ms avg latency, 9113.0 ms max latency.
+15392 records sent, 3075.3 records/sec (2.93 MB/sec), 9414.4 ms avg latency, 9809.0 ms max latency.
+23344 records sent, 4582.6 records/sec (4.37 MB/sec), 8810.1 ms avg latency, 10135.0 ms max latency.
+928 records sent, 145.6 records/sec (0.14 MB/sec), 8817.0 ms avg latency, 14425.0 ms max latency.
+176 records sent, 24.2 records/sec (0.02 MB/sec), 14445.1 ms avg latency, 21541.0 ms max latency.
+48064 records sent, 9607.0 records/sec (9.16 MB/sec), 14920.5 ms avg latency, 24468.0 ms max latency.
+127280 records sent, 25425.5 records/sec (24.25 MB/sec), 1076.0 ms avg latency, 1917.0 ms max latency.
+22240 records sent, 4410.9 records/sec (4.21 MB/sec), 3872.2 ms avg latency, 6142.0 ms max latency.
+15104 records sent, 3019.0 records/sec (2.88 MB/sec), 7961.1 ms avg latency, 9111.0 ms max latency.
+15248 records sent, 3037.5 records/sec (2.90 MB/sec), 10222.3 ms avg latency, 10791.0 ms max latency.
+15904 records sent, 3141.8 records/sec (3.00 MB/sec), 10431.7 ms avg latency, 10823.0 ms max latency.
+16928 records sent, 3312.1 records/sec (3.16 MB/sec), 10272.9 ms avg latency, 11114.0 ms max latency.
+12080 records sent, 2327.1 records/sec (2.22 MB/sec), 11078.0 ms avg latency, 11733.0 ms max latency.
+14720 records sent, 2918.3 records/sec (2.78 MB/sec), 11888.9 ms avg latency, 12584.0 ms max latency.
+500000 records sent, 5017.863594 records/sec (4.79 MB/sec), 6115.12 ms avg latency, 24468.00 ms max latency, 5012 ms 50th, 20322 ms 95th, 23542 ms 99th, 24426 ms 99.9th.
