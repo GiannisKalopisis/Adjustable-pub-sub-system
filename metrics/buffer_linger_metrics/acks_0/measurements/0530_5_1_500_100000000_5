@@ -1,0 +1,19 @@
+117889 records sent, 23441.8 records/sec (11.18 MB/sec), 1692.0 ms avg latency, 4524.0 ms max latency.
+31264 records sent, 6141.0 records/sec (2.93 MB/sec), 6639.6 ms avg latency, 9564.0 ms max latency.
+20800 records sent, 4064.9 records/sec (1.94 MB/sec), 12021.7 ms avg latency, 14649.0 ms max latency.
+17760 records sent, 3521.7 records/sec (1.68 MB/sec), 16547.9 ms avg latency, 19662.0 ms max latency.
+23360 records sent, 4609.3 records/sec (2.20 MB/sec), 21967.8 ms avg latency, 24618.0 ms max latency.
+24416 records sent, 4689.1 records/sec (2.24 MB/sec), 26627.3 ms avg latency, 29027.0 ms max latency.
+21056 records sent, 4156.3 records/sec (1.98 MB/sec), 31146.1 ms avg latency, 33544.0 ms max latency.
+30688 records sent, 6006.7 records/sec (2.86 MB/sec), 35581.3 ms avg latency, 37689.0 ms max latency.
+21568 records sent, 4111.3 records/sec (1.96 MB/sec), 40122.7 ms avg latency, 42275.0 ms max latency.
+22432 records sent, 4362.5 records/sec (2.08 MB/sec), 42312.1 ms avg latency, 43894.0 ms max latency.
+23072 records sent, 4612.6 records/sec (2.20 MB/sec), 43949.1 ms avg latency, 44467.0 ms max latency.
+266208 records sent, 30647.9 records/sec (14.61 MB/sec), 18945.3 ms avg latency, 44293.0 ms max latency.
+1120 records sent, 152.3 records/sec (0.07 MB/sec), 6081.1 ms avg latency, 11861.0 ms max latency.
+112224 records sent, 22426.9 records/sec (10.69 MB/sec), 14699.7 ms avg latency, 16611.0 ms max latency.
+157824 records sent, 31564.8 records/sec (15.05 MB/sec), 12584.7 ms avg latency, 19153.0 ms max latency.
+57152 records sent, 11421.3 records/sec (5.45 MB/sec), 7047.0 ms avg latency, 9285.0 ms max latency.
+24448 records sent, 4738.9 records/sec (2.26 MB/sec), 11312.8 ms avg latency, 13536.0 ms max latency.
+20480 records sent, 4089.5 records/sec (1.95 MB/sec), 15607.6 ms avg latency, 17909.0 ms max latency.
+1000000 records sent, 10135.819988 records/sec (4.83 MB/sec), 16491.44 ms avg latency, 44467.00 ms max latency, 14440 ms 50th, 42668 ms 95th, 44071 ms 99th, 44291 ms 99.9th.
