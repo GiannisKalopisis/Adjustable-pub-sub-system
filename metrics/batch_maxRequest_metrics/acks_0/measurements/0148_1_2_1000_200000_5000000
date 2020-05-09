@@ -1,0 +1,1 @@
+500000 records sent, 106655.290102 records/sec (101.71 MB/sec), 275.71 ms avg latency, 617.00 ms max latency, 275 ms 50th, 523 ms 95th, 602 ms 99th, 614 ms 99.9th.
