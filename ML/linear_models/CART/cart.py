@@ -56,17 +56,22 @@ if __name__ == '__main__':
         # cross_validation
         print("Cross Validation (sklearn):")
         for score_param in scoring_dict:
+            start = time.clock()
             score = cross_val_score(decisionTreeRegressor, X.values, y.values, scoring=scoring_dict[score_param], cv=kf)
             print("%s:" % (score_param))
             # print(score)
             print("Accuracy: %0.2f (+/- %0.2f)\n" % (score.mean(), score.std() * 2))
+            print("Elapsed time: {}".format(time.clock()-start))
 
     else:
 
         X_train, X_test, y_train, y_test = train_test_split(X.values, y.values, test_size=(percentage/100), random_state=None, shuffle=True)
 
+
+        start = time.clock()
         decisionTreeRegressor.fit(X_train, y_train)
         y_pred = decisionTreeRegressor.predict(X_test)
         print("No cross validation:")
         print_metrics(y_test, y_pred)
+        print("Elapsed time: {}".format(time.clock()-start))
 
