@@ -39,8 +39,8 @@ if __name__ == '__main__':
     X, y = getInputTargetDataPd(data, target)
 
     # parameters dictionary
-    param_dict = {'max_depth': np.arange(3,100),
-                  'min_samples_leaf': np.arange(2,100)}
+    param_dict = {'max_depth': np.arange(3,30),
+                  'min_samples_leaf': np.arange(2,30)}
 
     # getting regressor with optimal parameters from grid search
     print("Starting gridSearch for tuning Decision Tree parameters.")
@@ -60,8 +60,8 @@ if __name__ == '__main__':
             score = cross_val_score(decisionTreeRegressor, X.values, y.values, scoring=scoring_dict[score_param], cv=kf)
             print("%s:" % (score_param))
             # print(score)
-            print("Accuracy: %0.2f (+/- %0.2f)\n" % (score.mean(), score.std() * 2))
-            print("Elapsed time: {}".format(time.clock()-start))
+            print("Accuracy: %0.2f (+/- %0.2f)" % (score.mean(), score.std() * 2))
+            print("Elapsed time: {}\n".format(time.clock()-start))
 
     else:
 
