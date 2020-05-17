@@ -5,10 +5,10 @@ import pandas as pd
 import numpy as np
 import csv
 
-from general_funcs import *
-from parameters_funcs import * 
-from print_funcs import *
-from process_csv import *
+from utilities.general_funcs import *
+from utilities.parameters_funcs import * 
+from utilities.print_visualize_funcs import *
+from utilities.process_csv import *
 
 
 scoring_dict = {
@@ -28,10 +28,10 @@ scoring_dict_names = {
 }
 
 
-filesList= ["../data/1_parameter/Batch_Size.tsv", "../data/1_parameter/Buffer_Memory.tsv", "../data/1_parameter/Linger_Ms.tsv", \
-            "../data/1_parameter/Max_Request_Size.tsv", "../data/1_parameter/Message_Size.tsv", "../data/2_parameters/Batch_Size+Buffer_Memory.tsv",
-            "../data/2_parameters/Batch_Size+Linger_Ms.tsv", "../data/2_parameters/Batch_Size+Max_Request_Size.tsv", "../data/2_parameters/Buffer_Memory+Linger_Ms.tsv", 
-            "../data/2_parameters/Linger_Ms+Max_Request_Size.tsv"]
+filesList= ["../../data/1_parameter/Batch_Size.tsv", "../../data/1_parameter/Buffer_Memory.tsv", "../../data/1_parameter/Linger_Ms.tsv", \
+            "../../data/1_parameter/Max_Request_Size.tsv", "../../data/1_parameter/Message_Size.tsv", "../../data/2_parameters/Batch_Size+Buffer_Memory.tsv",
+            "../../data/2_parameters/Batch_Size+Linger_Ms.tsv", "../../data/2_parameters/Batch_Size+Max_Request_Size.tsv", "../../data/2_parameters/Buffer_Memory+Linger_Ms.tsv", 
+            "../../data/2_parameters/Linger_Ms+Max_Request_Size.tsv"]
 
 
 if __name__ == '__main__':

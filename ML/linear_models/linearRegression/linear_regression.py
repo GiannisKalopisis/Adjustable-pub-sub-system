@@ -3,10 +3,10 @@ from sklearn.model_selection import train_test_split, cross_val_score, cross_val
 from sklearn.metrics import mean_absolute_error, mean_squared_error, median_absolute_error, r2_score, explained_variance_score
 import pandas as pd
 
-from general_funcs import *
-from parameters_funcs import * 
-from print_funcs import *
-from process_csv import *
+from utilities.general_funcs import *
+from utilities.parameters_funcs import * 
+from utilities.print_visualize_funcs import *
+from utilities.process_csv import *
 
 
 scoring_dict = {
