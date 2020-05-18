@@ -48,15 +48,15 @@ if __name__ == '__main__':
     print("%s:" % (target))
     row = []
 
+    # parameters dictionary
+    param_dict = {'max_depth': np.arange(3,30),
+                    'min_samples_leaf': np.arange(2,30)}
+
     for input_file in filesList:
 
         print("\n%s:" % (input_file))
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
-
-        # parameters dictionary
-        param_dict = {'max_depth': np.arange(3,50),
-                      'min_samples_leaf': np.arange(2,50)}
 
         # getting regressor with optimal parameters from grid search
         print("Starting gridSearch for tuning Decision Tree parameters.")
@@ -107,7 +107,7 @@ if __name__ == '__main__':
     
     print("\n\nWriting to file:\n")
 
-    _file = "measurements.tsv"
+    _file = "measurements_" + target.replace(' ', '_') + ".tsv"
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)

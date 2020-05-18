@@ -27,7 +27,7 @@ scoring_dict_names = {
     "MDE": "Median Absolute Error"
 }
 
-CROSS_VAL = False
+CROSS_VAL = True
 
 if __name__ == '__main__':
 
@@ -39,8 +39,8 @@ if __name__ == '__main__':
     X, y = getInputTargetDataPd(data, target)
 
     # parameters dictionary
-    param_dict = {'max_depth': np.arange(3,30),
-                  'min_samples_leaf': np.arange(2,30)}
+    param_dict = {'max_depth': np.arange(3,31),
+                  'min_samples_leaf': np.arange(2,11)}
 
     # getting regressor with optimal parameters from grid search
     print("Starting gridSearch for tuning Decision Tree parameters.")
