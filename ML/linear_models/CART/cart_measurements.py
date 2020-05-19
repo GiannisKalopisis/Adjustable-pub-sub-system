@@ -1,14 +1,12 @@
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV, cross_val_score
 from sklearn.metrics import mean_absolute_error, mean_squared_error, median_absolute_error, r2_score, explained_variance_score
+from sklearn import tree
+from sklearn.pipeline import Pipeline
 import time
 import pandas as pd
 import numpy as np
 import csv
 
-from utilities.general_funcs import *
-from utilities.parameters_funcs import * 
-from utilities.print_visualize_funcs import *
 from utilities.process_csv import *
 
 
@@ -48,9 +46,8 @@ if __name__ == '__main__':
     print("%s:" % (target))
     row = []
 
-    # parameters dictionary
-    param_dict = {'max_depth': np.arange(3,30),
-                    'min_samples_leaf': np.arange(2,30)}
+    depths = np.arange(3,31)
+    num_leafs = np.arange(2,31)
 
     for input_file in filesList:
 
@@ -58,38 +55,36 @@ if __name__ == '__main__':
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
 
+        # GridSearch preparation
+        decisionTree = tree.DecisionTreeRegressor()
+        pipe = Pipeline(steps=[('decisionTree', decisionTree)])
+        parameters = dict(decisionTree__max_depth=depths,
+                          decisionTree__min_samples_leaf=num_leafs)
+
         # getting regressor with optimal parameters from grid search
-        print("Starting gridSearch for tuning Decision Tree parameters.")
-        start = time.clock()
-        decisionTreeRegressor = GridSearchCV(DecisionTreeRegressor(), param_dict)
-        end = time.clock()
-        print("Elapsed time for GridSearchCV: {}\n".format(end-start))
+        DTR_gs = GridSearchCV(pipe, parameters)
 
+        # take best estimator
+        X_train, X_test, y_train, y_test = train_test_split(X.values, y.values, test_size=(percentage/100), random_state=None, shuffle=True)
+        DTR_gs.fit(X_train, y_train)
+        print('Best max depth:', DTR_gs.best_estimator_.get_params()['decisionTree__max_depth'])
+        print('Best min samples leaf:', DTR_gs.best_estimator_.get_params()['decisionTree__min_samples_leaf'])
+        print(DTR_gs.best_estimator_.get_params(), "\n\n")
+        best_estimator = DTR_gs.best_estimator_
+
+        print("Cross validation: \n")
         kf = KFold(n_splits=percentage, random_state=None, shuffle=True)
-
-        # cross_validation
-        print("Cross Validation (sklearn):")
         for score_param in scoring_dict:
-            start = time.clock()
-            score = cross_val_score(decisionTreeRegressor, X.values, y.values, scoring=scoring_dict[score_param], cv=kf)
             print("%s:" % (score_param))
-            # print(score)
-            print("Accuracy: %0.2f (+/- %0.2f)" % (score.mean(), score.std() * 2))
-            print("Elapsed time: {}\n".format(time.clock()-start))
+            cv_results = cross_val_score(best_estimator, X, y, scoring=scoring_dict[score_param], cv=kf, n_jobs=-1)
+            print(cv_results)
+            print("Accuracy: %0.2f (+/- %0.2f)\n" % (cv_results.mean(), cv_results.std() * 2))
             row.append("{:.2f} (+/- {:.2f})".format(score.mean(), score.std() * 2))
 
-
-        print("-----------------------")
-
-
-        X_train, X_test, y_train, y_test = train_test_split(X.values, y.values, test_size=(percentage/100), random_state=None, shuffle=True)
-
-        start = time.clock()
-        decisionTreeRegressor.fit(X_train, y_train)
-        y_pred = decisionTreeRegressor.predict(X_test)
-        print("No cross validation:")
-        print_metrics(y_test, y_pred)
-        print("Elapsed time: {}".format(time.clock()-start))
+        print("\nNo cross validation: \n")
+        best_estimator.fit(X_train, y_train)
+        y_pred = best_estimator.predict(X_test)
+        # print_metrics(y_test, y_pred)
         print()
         print('R^2:', r2_score(y_test, y_pred))
         row.append(r2_score(y_test, y_pred))
@@ -101,6 +96,9 @@ if __name__ == '__main__':
         row.append(mean_squared_error(y_test, y_pred))
         print('Median Absolute Error:', median_absolute_error(y_test, y_pred))
         row.append(median_absolute_error(y_test, y_pred))
+
+        print("------------------------")
+
 
 
     row = np.reshape(row, (100, 1))

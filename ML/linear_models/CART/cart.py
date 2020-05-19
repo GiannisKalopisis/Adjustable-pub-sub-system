@@ -1,7 +1,6 @@
 from sklearn import tree
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV, cross_val_score
 from sklearn.pipeline import Pipeline
-import time
 import pandas as pd
 import numpy as np
 
@@ -45,7 +44,6 @@ if __name__ == '__main__':
                       decisionTree__min_samples_leaf=num_leafs)
 
     # getting regressor with optimal parameters from grid search
-    print("Starting gridSearch for tuning Decision Tree parameters.")
     DTR_gs = GridSearchCV(pipe, parameters)
 
     # take best estimator
