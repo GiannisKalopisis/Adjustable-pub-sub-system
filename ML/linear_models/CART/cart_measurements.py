@@ -79,7 +79,7 @@ if __name__ == '__main__':
             cv_results = cross_val_score(best_estimator, X, y, scoring=scoring_dict[score_param], cv=kf, n_jobs=-1)
             print(cv_results)
             print("Accuracy: %0.2f (+/- %0.2f)\n" % (cv_results.mean(), cv_results.std() * 2))
-            row.append("{:.2f} (+/- {:.2f})".format(score.mean(), score.std() * 2))
+            row.append("{:.2f} (+/- {:.2f})".format(cv_results.mean(), cv_results.std() * 2))
 
         print("\nNo cross validation: \n")
         best_estimator.fit(X_train, y_train)
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     
     print("\n\nWriting to file:\n")
 
-    _file = "measurements_" + target.replace(' ', '_') + ".tsv"
+    _file = "measurements_" + target.replace(' ', '_').replace('/', '_') + ".tsv"
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)
@@ -132,4 +132,4 @@ if __name__ == '__main__':
 
    
 
-   
+
