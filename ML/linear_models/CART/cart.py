@@ -56,21 +56,28 @@ if __name__ == '__main__':
 
     # take best estimator
     X_train, X_test, y_train, y_test = train_test_split(X.values, y.values, test_size=(percentage/100), random_state=None, shuffle=True)
+    start = time.clock()
     DTR_gs.fit(X_train, y_train)
+    end = time.clock()
+    print("Elapsed time for fitting best model: {}\n".format(end-start))
     print('Best max depth:', DTR_gs.best_estimator_.get_params()['decisionTree__max_depth'])
     print('Best min samples leaf:', DTR_gs.best_estimator_.get_params()['decisionTree__min_samples_leaf'])
-    print(DTR_gs.best_estimator_.get_params()['decisionTree'])
+    print(DTR_gs.best_estimator_.get_params())
     # my_DT_model = DTR_gs.best_estimator_
 
     # train model
     # my_DT_model.fit(X_train, y_train)
     # y_pred = my_DT_model.predict(X_test)
     # print_metrics(y_test, y_pred)
-    kf = KFold(n_splits=percentage, random_state=None, shuffle=True)
-    cv_results = cross_val_score(DTR_gs, X, y, cv=kf, n_jobs=-1)
-    print(cv_results)
-    print(cv_results.mean())
-    print(cv_results.std())
+    for score_param in scoring_dict:
+        start = time.clock()
+        kf = KFold(n_splits=percentage, random_state=None, shuffle=True)
+        cv_results = cross_val_score(DTR_gs, X, y, scoring=scoring_dict[score_param], cv=kf, n_jobs=-1)
+        end = time.clock()
+        print("Elapsed time for cross validation: {}\n".format(end-start))
+        print("%s:" % (score_param))
+        print(cv_results)
+        print("Accuracy: %0.2f (+/- %0.2f)" % (score.mean(), score.std() * 2))
 
 
 
