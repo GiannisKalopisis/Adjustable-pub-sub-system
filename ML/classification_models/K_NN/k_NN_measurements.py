@@ -35,7 +35,6 @@ if __name__ == '__main__':
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
 
-        data = readCSVpd(input_file)
         X, y_data = getInputTargetDataPd(data, target)
         y_copy = y.copy()
 
