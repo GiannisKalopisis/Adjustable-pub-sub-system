@@ -23,10 +23,10 @@ if __name__ == '__main__':
     scaler = StandardScaler()
     data_np = scaler.fit_transform(data.values)
     print(data_np)
-    data = pd.DataFrame(data_np, index=data.index, columns=data.columns)
+    data_scaled = pd.DataFrame(data_np, index=data.index, columns=data.columns)
 
 
-    X, y = getInputTargetDataPd(data, target)
+    X, y = getInputTargetDataPd(data_scaled, target)
     # tuned_parameters = [{'kernel': ['linear'], 'C': [0.01, 0.1, 1, 10, 100, 1000]}]
 
     cut_bins = 5
@@ -43,6 +43,7 @@ if __name__ == '__main__':
     end_time = time.time()
     print("time:", end_time-start_time)
     print('Best C:', best_model.best_estimator_.get_params()['C'])
+
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None, shuffle=True)
     X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=None, shuffle=True)
