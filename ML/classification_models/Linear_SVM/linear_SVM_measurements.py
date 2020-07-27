@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.svm import LinearSVC
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import StandardScaler
-import csv, os
+import csv, os, time
 
 
 from utilities.general_funcs import *
@@ -49,7 +49,7 @@ if __name__ == '__main__':
             y = pd.qcut(y_data[target], q=bucket, labels=False, precision=0)
 
             hyperparameters = dict(C=[ 0.1, 1, 10, 100])
-            linear_svm = LinearSVC(random_state=None, tol=1e-4, max_iter=1000000)
+            linear_svm = LinearSVC(random_state=None, tol=1e-4, max_iter=1e+7)
             
             clf = GridSearchCV(linear_svm, hyperparameters, n_jobs=-1, cv=5)
             print("Start fitting GridSearch...")
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None, shuffle=True)
             X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=None, shuffle=True)
 
-            linear_svm = LinearSVC(C=best_model.best_estimator_.get_params()['C'], dual=False, tol=1e-4, max_iter=1000000)
+            linear_svm = LinearSVC(C=best_model.best_estimator_.get_params()['C'], dual=False, tol=1e-4, max_iter=1e+7)
             linear_svm.fit(X_train, y_train)
             y_pred_val = linear_svm.predict(X_val)
             dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
             y_pred_test = linear_svm.predict(X_test)
             dict_test = classification_report(y_test, y_pred_test, output_dict=True)
-            print("\npredicting with test data:\n", dict_pred['accuracy'])
+            print("\npredicting with test data:\n", dict_test['accuracy'])
             row.append([best_model.best_estimator_.get_params()['C'], dict_test['accuracy']])
 
             kf = KFold(n_splits=5, random_state=None, shuffle=True)
@@ -86,7 +86,14 @@ if __name__ == '__main__':
     
     print("\n\nWriting to file:\n")
 
+
+    print(row)
+
     _file = "measurements.tsv"
+    target = target.replace("/", "_")
+    target = target.replace(" ", "_")
+    _file = target + "_" + _file
+
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)

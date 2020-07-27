@@ -49,10 +49,10 @@ if __name__ == '__main__':
     X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=None, shuffle=True)
 
     # standardize data with mean 0
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
-    X_val = scaler.transform(X_val)
+    # scaler = StandardScaler()
+    # X_train = scaler.fit_transform(X_train)
+    # X_test = scaler.transform(X_test)
+    # X_val = scaler.transform(X_val)
 
     linear_svm = LinearSVC(C=best_model.best_estimator_.get_params()['C'], dual=False, tol=1e-3, max_iter=1000000)
     linear_svm.fit(X_train, y_train)
