@@ -72,22 +72,22 @@ if __name__ == '__main__':
             y_pred_val = rbf_svm.predict(X_val)
             dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
             print("\npredicting with validation data:\n", dict_pred['accuracy'])
-            row.append([best_model.best_estimator_.get_params()['C'], dict_pred['accuracy']])
+            row.append([best_model.best_estimator_.get_params()['C'], best_model.best_estimator_.get_params()['gamma'], dict_pred['accuracy']])
 
             y_pred_test = rbf_svm.predict(X_test)
             dict_test = classification_report(y_test, y_pred_test, output_dict=True)
             print("\npredicting with test data:\n", dict_test['accuracy'])
-            row.append([best_model.best_estimator_.get_params()['C'], dict_test['accuracy']])
+            row.append([best_model.best_estimator_.get_params()['C'], best_model.best_estimator_.get_params()['gamma'], dict_test['accuracy']])
 
             kf = KFold(n_splits=5, random_state=None, shuffle=True)
             scores = cross_val_score(rbf_svm, X, y, cv=kf, scoring='accuracy')
             print("Accuracy: %0.2f" % (scores.mean()))
-            row.append([best_model.best_estimator_.get_params()['C'], scores.mean()])
+            row.append([best_model.best_estimator_.get_params()['C'], best_model.best_estimator_.get_params()['gamma'], scores.mean()])
             print("-----------------------------\n")
 
         print("================================\n")
 
-    row = np.reshape(row, (150, 2))
+    row = np.reshape(row, (150, 3))
     
     print("\n\nWriting to file:\n")
 
