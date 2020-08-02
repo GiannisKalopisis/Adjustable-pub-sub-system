@@ -66,7 +66,7 @@ if __name__ == '__main__':
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None, shuffle=True)
             X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=None, shuffle=True)
 
-            rbf_svm = SVC(C=best_model.best_estimator_.get_params()['C'], dual=False, tol=1e-4, max_iter=1e+7)
+            rbf_svm = SVC(C=best_model.best_estimator_.get_params()['C'], gamma=best_model.best_estimator_.get_params()['gamma'], cache_size=500, tol=1e-3, max_iter=1000000)
             rbf_svm.fit(X_train, y_train)
             y_pred_val = rbf_svm.predict(X_val)
             dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
