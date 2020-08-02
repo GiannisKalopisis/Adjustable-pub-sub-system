@@ -61,6 +61,7 @@ if __name__ == '__main__':
             end_time = time.time()
             print("time:", end_time-start_time)
             print('Best C:', best_model.best_estimator_.get_params()['C'])
+            print('Best gamma:', best_model.best_estimator_.get_params()['gamma'])
 
             # Split data to train, test and validation
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None, shuffle=True)
