@@ -24,6 +24,10 @@ if __name__ == '__main__':
         print("You have to give target as argument.")
         sys.exit(1)
     target = sys.argv[1]
+    
+    # metric = 'precision'
+    # metric = 'recall'
+    metric = 'f1-score'
 
     print("%s:" % (target))
     cut_bins = [2, 3, 5, 7, 10]
@@ -59,13 +63,15 @@ if __name__ == '__main__':
             knn.fit(X_train, y_train)
             y_pred_val = knn.predict(X_val)
             dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
-            print("\npredicting with validation data:\n", dict_pred['accuracy'])
-            row.append([best_model.best_estimator_.get_params()['n_neighbors'], dict_pred['accuracy']])
+            print("\npredicting with validation data:\n", dict_pred['weighted avg'][metric])
+            dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
+            # print("\npredicting with validation data:\n", dict_pred['accuracy'])
+            row.append([best_model.best_estimator_.get_params()['n_neighbors'], dict_pred['weighted avg'][metric]])
 
             y_pred_test = knn.predict(X_test)
             dict_test = classification_report(y_test, y_pred_test, output_dict=True)
-            print("\npredicting with test data:\n", dict_test['accuracy'])
-            row.append([best_model.best_estimator_.get_params()['n_neighbors'], dict_test['accuracy']])
+            print("\npredicting with test data:\n", dict_test['weighted avg'][metric])
+            row.append([best_model.best_estimator_.get_params()['n_neighbors'], dict_test['weighted avg'][metric]])
 
             kf = KFold(n_splits=5, random_state=None, shuffle=True)
             scores = cross_val_score(knn, X, y, cv=kf, scoring='accuracy')
@@ -80,6 +86,11 @@ if __name__ == '__main__':
     print("\n\nWriting to file:\n")
 
     _file = "measurements.tsv"
+    target = target.replace("/", "_")
+    target = target.replace(" ", "_")
+    metric = metric.replace("-", "_")
+    _file = target + "_" + metric + "_" + _file
+
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)
@@ -95,3 +106,4 @@ if __name__ == '__main__':
         writer.writerows(row)
 
     print("Done!")
+
