@@ -45,7 +45,9 @@ if __name__ == '__main__':
     knn = KNeighborsClassifier(n_neighbors=best_model.best_estimator_.get_params()['n_neighbors'], algorithm='auto', n_jobs=-1)
     knn.fit(x_train, y_train)
     y_pred_val = knn.predict(x_val)
-    print("\npredicting with validation data:\n", classification_report(y_val, y_pred_val))
+    dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
+    print("\npredicting with validation data:\n", dict_pred['weighted avg']['precision'])
+    # print("\npredicting with validation data:\n", classification_report(y_val, y_pred_val, output_dict=True))
 
     y_pred_test = knn.predict(x_test)
     print("\npredicting with test data:\n", classification_report(y_test, y_pred_test))
