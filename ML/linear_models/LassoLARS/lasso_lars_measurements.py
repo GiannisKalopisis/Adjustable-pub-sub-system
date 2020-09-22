@@ -42,7 +42,7 @@ if __name__ == '__main__':
     target = sys.argv[1]
 
     # cross validation 
-    percentage = 10
+    percentage = 5
 
     print("%s:" % (target))
     row = []
@@ -52,6 +52,8 @@ if __name__ == '__main__':
         print("\n%s:" % (input_file))
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
+
+        y = np.log10(y)
 
         # compute alpha parameter and fit model
         lassolarscv = LassoLarsCV(fit_intercept=True, verbose=False, max_iter=100000, normalize=True, precompute='auto', cv=percentage, max_n_alphas=10000)
@@ -63,8 +65,9 @@ if __name__ == '__main__':
             score = cross_val_score(lassolarscv, X.values, y.values.ravel(), scoring=scoring_dict[score_param], cv=kf)
             print("%s:" % (score_param))
             # print(score)
-            print("Accuracy: %0.2f (+/- %0.2f)\n" % (score.mean(), score.std() * 2))
-            row.append("{:.2f} (+/- {:.2f})".format(score.mean(), score.std() * 2))
+            print("Accuracy: %0.2f\n" % (score.mean()))
+            row.append("{:.2f}".format(score.mean()))
+            # row.append(+/- {:.2f})
 
 
         print("-----------------------")
@@ -80,15 +83,15 @@ if __name__ == '__main__':
         print_metrics(y_test, y_pred)
         print()
         print('R^2:', r2_score(y_test, y_pred))
-        row.append(r2_score(y_test, y_pred))
+        row.append(round(r2_score(y_test, y_pred), 2))
         print('Explained Variance:', explained_variance_score(y_test, y_pred))
-        row.append(explained_variance_score(y_test, y_pred))
+        row.append(round(explained_variance_score(y_test, y_pred), 2))
         print('Mean Absolute Error:', mean_absolute_error(y_test, y_pred))
-        row.append(mean_absolute_error(y_test, y_pred))
+        row.append(round(mean_absolute_error(y_test, y_pred), 2))
         print('Mean Squared Error:', mean_squared_error(y_test, y_pred))
-        row.append(mean_squared_error(y_test, y_pred))
+        row.append(round(mean_squared_error(y_test, y_pred), 2))
         print('Median Absolute Error:', median_absolute_error(y_test, y_pred))
-        row.append(median_absolute_error(y_test, y_pred))
+        row.append(round(median_absolute_error(y_test, y_pred), 2))
 
 
     row = np.reshape(row, (100, 1))
@@ -96,18 +99,22 @@ if __name__ == '__main__':
     print("\n\nWriting to file:\n")
 
     _file = "measurements.tsv"
+    target = target.replace("/", "_")
+    target = target.replace(" ", "_")
+    _file = target + "_" + _file
+
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)
         print("Removing old '{}'".format(_file))
         print("Creating new '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     else:
         print("Creating new file '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     print("Writing to new '{}'".format(file_name.name))
-    with open(file_name.name, 'w', newline = '') as file:
-        writer = csv.writer(file, delimiter = '\t')
+    with open(file_name.name, 'w+', newline = '') as newfile:
+        writer = csv.writer(newfile, delimiter = '\t')
         writer.writerows(row)
 
     print("Done!")

@@ -2,6 +2,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate, KFold
 from sklearn.metrics import mean_absolute_error, mean_squared_error, median_absolute_error, r2_score, explained_variance_score
 import pandas as pd
+import numpy as np
+import math
 
 from utilities.general_funcs import *
 from utilities.parameters_funcs import * 
@@ -36,6 +38,8 @@ if __name__ == '__main__':
 
     data = readCSVpd(input_file)
     X, y = getInputTargetDataPd(data, target)
+
+    y = np.log(y)
 
     # cross validation 
     if CROSS_VAL:
@@ -76,6 +80,8 @@ if __name__ == '__main__':
         regressor.fit(X_train, y_train) # test also fit_transform
 
         y_pred = regressor.predict(X_test)
+        for i in range(len(y_pred)):
+            print("pred: %f, real: %f, difference: %f" % (y_pred[i], y_test[i], y_pred[i] - y_test[i]))
         # actual_pred_values = get_pred_values_dataframe(Y_test, Y_pred)    # print the actual values
         print("No cross validation :")
         print(get_coefficient_dataframe(regressor, data.columns.tolist(), target))

@@ -41,7 +41,7 @@ if __name__ == '__main__':
     target = sys.argv[1]
 
     # cross validation 
-    percentage = 10
+    percentage = 5
 
     print("%s:" % (target))
     row = []
@@ -54,6 +54,8 @@ if __name__ == '__main__':
         print("\n%s:" % (input_file))
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
+
+        y = np.log10(y)
 
         # GridSearch preparation
         decisionTree = tree.DecisionTreeRegressor()
@@ -78,8 +80,9 @@ if __name__ == '__main__':
             print("%s:" % (score_param))
             cv_results = cross_val_score(best_estimator, X, y, scoring=scoring_dict[score_param], cv=kf, n_jobs=-1)
             print(cv_results)
-            print("Accuracy: %0.2f (+/- %0.2f)\n" % (cv_results.mean(), cv_results.std() * 2))
-            row.append("{:.2f} (+/- {:.2f})".format(cv_results.mean(), cv_results.std() * 2))
+            print("Accuracy: %0.2f\n" % (cv_results.mean(), cv_results.std() * 2))
+            row.append("{:.2f}".format(cv_results.mean(), cv_results.std() * 2))
+            # row.append(+/- {:.2f}, )
 
         print("\nNo cross validation: \n")
         best_estimator.fit(X_train, y_train)
@@ -87,15 +90,15 @@ if __name__ == '__main__':
         # print_metrics(y_test, y_pred)
         print()
         print('R^2:', r2_score(y_test, y_pred))
-        row.append(r2_score(y_test, y_pred))
+        row.append(round(r2_score(y_test, y_pred), 2))
         print('Explained Variance:', explained_variance_score(y_test, y_pred))
-        row.append(explained_variance_score(y_test, y_pred))
+        row.append(round(explained_variance_score(y_test, y_pred), 2))
         print('Mean Absolute Error:', mean_absolute_error(y_test, y_pred))
-        row.append(mean_absolute_error(y_test, y_pred))
+        row.append(round(mean_absolute_error(y_test, y_pred), 2))
         print('Mean Squared Error:', mean_squared_error(y_test, y_pred))
-        row.append(mean_squared_error(y_test, y_pred))
+        row.append(round(mean_squared_error(y_test, y_pred), 2))
         print('Median Absolute Error:', median_absolute_error(y_test, y_pred))
-        row.append(median_absolute_error(y_test, y_pred))
+        row.append(round(median_absolute_error(y_test, y_pred), 2))
 
         print("------------------------")
 
@@ -105,19 +108,23 @@ if __name__ == '__main__':
     
     print("\n\nWriting to file:\n")
 
-    _file = "measurements_" + target.replace(' ', '_').replace('/', '_') + ".tsv"
+    _file = "measurements.tsv"
+    target = target.replace("/", "_")
+    target = target.replace(" ", "_")
+    _file = target + "_" + _file
+
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)
         print("Removing old '{}'".format(_file))
         print("Creating new '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     else:
         print("Creating new file '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     print("Writing to new '{}'".format(file_name.name))
-    with open(file_name.name, 'w', newline = '') as file:
-        writer = csv.writer(file, delimiter = '\t')
+    with open(file_name.name, 'w+', newline = '') as newfile:
+        writer = csv.writer(newfile, delimiter = '\t')
         writer.writerows(row)
 
     print("Done!")

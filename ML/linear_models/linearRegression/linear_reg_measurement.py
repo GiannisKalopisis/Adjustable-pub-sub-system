@@ -45,7 +45,7 @@ if __name__ == '__main__':
     target = sys.argv[1]
 
     # cross validation 
-    percentage = 10
+    percentage = 5
 
     print("%s:" % (target))
     row = []
@@ -56,6 +56,8 @@ if __name__ == '__main__':
         data = readCSVpd(input_file)
         X, y = getInputTargetDataPd(data, target)
 
+        y = np.log10(y)
+
         regressor = LinearRegression()
         kf = KFold(n_splits=percentage, random_state=None, shuffle=True)
         # first way with ready cross_validation
@@ -64,8 +66,8 @@ if __name__ == '__main__':
             score = cross_val_score(regressor, X, y, scoring=scoring_dict[score_param], cv=kf)
             print("%s:" % (score_param))
             # print(score)
-            print("Accuracy: %0.2f (+/- %0.2f)\n" % (score.mean(), score.std() * 2))
-            row.append("{:.2f} (+/- {:.2f})".format(score.mean(), score.std() * 2))
+            print("Accuracy: %0.2f\n" % (score.mean()))
+            row.append("{:.2f}".format(score.mean()))
 
 
         print("-----------------------")
@@ -86,8 +88,9 @@ if __name__ == '__main__':
         for score_list in [R2, EV, MAE, MSE, MDE]:
             print("%s:" % (scoring_dict_names[namestr(score_list, globals())[0]]))
             # print(score)
-            print("Accuracy: %0.2f (+/- %0.2f)\n" % (np.mean(score_list), np.std(score_list) * 2))
-            row.append("{:.2f} (+/- {:.2f})".format(np.mean(score_list), np.std(score_list) * 2))
+            print("Accuracy: %0.2f\n" % (np.mean(score_list)))
+            row.append("{:.2f}".format(np.mean(score_list)))
+            # row.append(+/- {:.2f})
 
         print("-----------------------")
 
@@ -100,15 +103,15 @@ if __name__ == '__main__':
         # print(get_coefficient_dataframe(regressor, data.columns.tolist(), target))
         print()
         print('R^2:', r2_score(y_test, y_pred))
-        row.append(r2_score(y_test, y_pred))
+        row.append(round(r2_score(y_test, y_pred), 2))
         print('Explained Variance:', explained_variance_score(y_test, y_pred))
-        row.append(explained_variance_score(y_test, y_pred))
+        row.append(round(explained_variance_score(y_test, y_pred), 2))
         print('Mean Absolute Error:', mean_absolute_error(y_test, y_pred))
-        row.append(mean_absolute_error(y_test, y_pred))
+        row.append(round(mean_absolute_error(y_test, y_pred), 2))
         print('Mean Squared Error:', mean_squared_error(y_test, y_pred))
-        row.append(mean_squared_error(y_test, y_pred))
+        row.append(round(mean_squared_error(y_test, y_pred), 2))
         print('Median Absolute Error:', median_absolute_error(y_test, y_pred))
-        row.append(median_absolute_error(y_test, y_pred))
+        row.append(round(median_absolute_error(y_test, y_pred), 2))
         
     row = np.reshape(row, (150, 1))
     
@@ -116,24 +119,25 @@ if __name__ == '__main__':
     print("\n\nWriting to file:\n")
 
     _file = "measurements.tsv"
+    target = target.replace("/", "_")
+    target = target.replace(" ", "_")
+    _file = target + "_" + _file
+
     file_exists = os.path.isfile(_file) 
     if file_exists:
         os.remove(_file)
         print("Removing old '{}'".format(_file))
         print("Creating new '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     else:
         print("Creating new file '{}'".format(_file))
-        file_name = open(_file, "w+")
+        file_name = open(_file, 'w+')
     print("Writing to new '{}'".format(file_name.name))
-    with open(file_name.name, 'w', newline = '') as file:
-        writer = csv.writer(file, delimiter = '\t')
+    with open(file_name.name, 'w+', newline = '') as newfile:
+        writer = csv.writer(newfile, delimiter = '\t')
         writer.writerows(row)
 
     print("Done!")
-
-
-        
 
 
 

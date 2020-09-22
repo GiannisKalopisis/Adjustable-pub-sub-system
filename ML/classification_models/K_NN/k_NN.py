@@ -1,5 +1,6 @@
 from sklearn.model_selection import train_test_split, KFold, cross_val_score, GridSearchCV
 import pandas as pd
+import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report
 from sklearn.metrics import roc_auc_score
@@ -22,6 +23,8 @@ if __name__ == '__main__':
     # take data and split
     data = readCSVpd(input_file)
     X, y = getInputTargetDataPd(data, target)
+
+    y = np.log10(y)
     y_copy = y.copy()
 
     cut_bins = 5
