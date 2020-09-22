@@ -28,7 +28,8 @@ if __name__ == '__main__':
     
     # metric = 'precision'
     # metric = 'recall'
-    metric = 'f1-score'
+    # metric = 'f1-score'
+    metric = 'accuracy'
 
     print("%s:" % (target))
     cut_bins = [2, 3, 5, 7, 10]
@@ -66,15 +67,17 @@ if __name__ == '__main__':
             knn.fit(X_train, y_train)
             y_pred_val = knn.predict(X_val)
             dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
-            print("\npredicting with validation data:\n", dict_pred['weighted avg'][metric])
-            dict_pred = classification_report(y_val, y_pred_val, output_dict=True)
-            # print("\npredicting with validation data:\n", dict_pred['accuracy'])
-            row.append([best_model.best_estimator_.get_params()['n_neighbors'], round(dict_pred['weighted avg'][metric], 2)])
+            # print("\npredicting with validation data:\n", dict_pred['weighted avg'][metric])
+            print("\npredicting with validation data:\n", dict_pred['accuracy'])
+            row.append([best_model.best_estimator_.get_params()['n_neighbors'], round(dict_pred['accuracy'], 2)])
+            # print("\npredicting with validation data:\n", dict_pred['weighted avg']['precision'])
 
             y_pred_test = knn.predict(X_test)
             dict_test = classification_report(y_test, y_pred_test, output_dict=True)
-            print("\npredicting with test data:\n", dict_test['weighted avg'][metric])
-            row.append([best_model.best_estimator_.get_params()['n_neighbors'], round(dict_test['weighted avg'][metric], 2)])
+            #print("\npredicting with test data:\n", dict_test['weighted avg'][metric])
+            print("\npredicting with validation data:\n", dict_test['accuracy'])
+            row.append([best_model.best_estimator_.get_params()['n_neighbors'], round(dict_test['accuracy'], 2)])
+            # print("\npredicting with validation data:\n", dict_pred['weighted avg']['precision'])
 
             kf = KFold(n_splits=5, random_state=None, shuffle=True)
             scores = cross_val_score(knn, X, y, cv=kf, scoring='accuracy')
