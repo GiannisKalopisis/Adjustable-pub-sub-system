@@ -4,7 +4,8 @@ from sklearn.pipeline import Pipeline
 import pandas as pd
 import numpy as np
 
-from utilities.parameters_funcs import * 
+from utilities.parameters_funcs import *
+from utilities.print_visualize_funcs import *
 from utilities.process_csv import *
 
 
@@ -46,6 +47,8 @@ if __name__ == '__main__':
     # getting regressor with optimal parameters from grid search
     DTR_gs = GridSearchCV(pipe, parameters)
 
+    y = np.log(y)
+
     # take best estimator
     X_train, X_test, y_train, y_test = train_test_split(X.values, y.values, test_size=(percentage/100), random_state=None, shuffle=True)
     DTR_gs.fit(X_train, y_train)
@@ -54,6 +57,7 @@ if __name__ == '__main__':
     print(DTR_gs.best_estimator_.get_params(), "\n\n")
     best_estimator = DTR_gs.best_estimator_
 
+    
 
     if CROSS_VAL:
 
@@ -68,6 +72,7 @@ if __name__ == '__main__':
     else:
 
         print("No cross validation: \n")
+
         best_estimator.fit(X_train, y_train)
         y_pred = best_estimator.predict(X_test)
         print_metrics(y_test, y_pred)
