@@ -25,7 +25,7 @@ scoring_dict_names = {
     "MDE": "Median Absolute Error"
 }
 
-CROSS_VAL = False
+CROSS_VAL = True
 
 if __name__ == '__main__':
 
@@ -35,6 +35,8 @@ if __name__ == '__main__':
     # take data and split
     data = readCSVpd(input_file)
     X, y = getInputTargetDataPd(data, target)
+
+    y = np.log(y)
 
     # cross validation lasso
     if CROSS_VAL:
