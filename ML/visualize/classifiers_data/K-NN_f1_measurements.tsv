@@ -1,4 +1,4 @@
- 	Buckets	Test Type	Neighbors	Records/sec	Neighbors	MB/sec	Neighbors	Avg latency	Neighbors	Max latency		
+ 	Buckets	Test Type	Neighbors-Records	Records/sec	Neighbors-MB	MB/sec	Neighbors-Avg	Avg latency	Neighbors-Max	Max latency		
 Batch Size	2	Validation data	1	0.9230769231	1	0.8576817781	1	0.8422586695	1	0.7961992293		
 		Test data	1	0.9104895639	1	0.8703307586	1	0.8733807882	1	0.7932354852		
 		Cross Validation	1	0.9290123457	1	0.8722222222	1	0.8580246914	1	0.8043209877		BUCKET
