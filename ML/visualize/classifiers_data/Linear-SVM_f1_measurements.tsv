@@ -1,4 +1,4 @@
-File	Buckets	Test Type	C	Records/sec	C	MB/sec	C	Avg latency	C	Max latency		
+File	Buckets	Test Type	C-Records	Records/sec	C-MB	MB/sec	C-Avg	Avg latency	C-Max	Max latency		
 Batch Size	2	Validation data	100	1	100	0.9846099197	100	0.988452796	10	0.9576716175		
 		Test data	100	0.9876491224	100	0.96296014	100	0.9691310976	10	0.9474992427		BUCKET
 		Cross Validation	100	0.9932098765	100	0.9703703704	100	0.975308642	10	0.9481481481		

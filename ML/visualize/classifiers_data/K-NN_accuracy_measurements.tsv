@@ -1,4 +1,4 @@
-file	Buckets	Test Type	Neighbors	Records/sec	Neighbors	MB/sec	Neighbors	Avg latency	Neighbors	Max latency		
+file	Buckets	Test Type	Neighbors-Records	Records/sec	Neighbors-MB	MB/sec	Neighbors-Avg	Avg latency	Neighbors-Max	Max latency		
 Batch Size	2	Validation data	1	0.9269230769	1	0.8538461538	1	0.8807692308	1	0.7961538462		
 Batch Size		Test data	1	0.8796296296	1	0.8456790123	1	0.8611111111	1	0.75		
 Batch Size		Cross Validation	1	0.9222222222	1	0.8740740741	1	0.8537037037	1	0.7969135802		BUCKET
@@ -66,7 +66,7 @@ Message Size	3	Validation data	3	0.8099173554	1	0.4876033058	1	0.694214876	1	0.4
 Message Size		Test data	3	0.7697368421	1	0.6315789474	1	0.6776315789	1	0.4934210526		
 Message Size		Cross Validation	3	0.8293917741	1	0.57811084	1	0.6931073545	1	0.5012983618		
 Message Size	5	Validation data	1	0.7190082645	1	0.4380165289	7	0.5371900826	1	0.3719008264		
-Message Size		Test data	1	0.6973684211	1	0.4868421053	7	0.4802631579	1	0.375		
+Message Size		Test data	1	0.6973684211	1	0.4868421053	7	0.4802631579	1	375		
 Message Size		Cross Validation	1	0.699729871	1	0.4788253747	7	0.5066835134	1	0.3835744162		
 Message Size	7	Validation data	1	0.6198347107	1	0.3966942149	20	0.4049586777	4	0.1983471074		
 Message Size		Test data	1	0.6644736842	1	0.4539473684	20	0.4539473684	4	0.3026315789		
