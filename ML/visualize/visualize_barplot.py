@@ -4,16 +4,15 @@ import numpy as np
 
 
 labels = ['Batch Size', 'Buffer Memory', 'Linger Ms', 'Max Request Size', 'Message Size', 'Batch Size +\n Buffer Memory', 'Batch Size +\n Linger Ms', 'Batch Size +\n Max Request Size', 'Buffer Memory +\n Linger Ms', 'Linger Ms +\n Max Request Size'] # 
-linear = [0.2, 0.23, 0.19, 0.2, 0.25, 0.21, 0.18, 0.19, 0.18, 0.16] 
-lasso = [0.17, 0.18, 0.21, 0.16, 0.32, 0.21, 0.18, 0.17, 0.17, 0.17] 
-lassolars = [0.19, 0.23, 0.15, 0.18, 0.25, 0.21, 0.18, 0.18, 0.16, 0.18]
-cart = [0.07, 0.08, 0.06, 0.05, 0.07, 0.07, 0.05, 0.03, 0.04, 0.04]
+linear = [0.19, 0.13, 0.14, 0.13, 0.16, 0.14, 0.17, 0.17, 0.08, 0.13] 
+lasso = [0.13, 0.13, 0.16, 0.13, 0.14, 0.1, 0.19, 0.13, 0.08, 0.13] 
+lassolars = [0.19, 0.15, 0.16, 0.15, 0.14, 0.11, 0.16, 0.16, 0.08, 0.14]
+cart = [0.02, 0.01, 0.01, 0.01, 0.05, 0.01, 0.01, 0.02, 0.0, 0.01]
 
-
-# MAE_lr_test = 0.2, 0.23, 0.19, 0.2, 0.25, 0.21, 0.18, 0.19, 0.18, 0.16
-# MAE_l_test = 0.17, 0.18, 0.21, 0.16, 0.32, 0.21, 0.18, 0.17, 0.17, 0.17
-# MAE_ll_test = 0.19, 0.23, 0.15, 0.18, 0.25, 0.21, 0.18, 0.18, 0.16, 0.18
-# MAE_c_test = 0.07, 0.08, 0.06, 0.05, 0.07, 0.07, 0.05, 0.03, 0.04, 0.04
+# MedAE_lr_test = 0.19, 0.13, 0.14, 0.13, 0.16, 0.14, 0.17, 0.17, 0.08, 0.13
+# MedAE_l_test = 0.13, 0.13, 0.16, 0.13, 0.14, 0.1, 0.19, 0.13, 0.08, 0.13
+# MedAE_ll_test = 0.19, 0.15, 0.16, 0.15, 0.14, 0.11, 0.16, 0.16, 0.08, 0.14
+# MedAE_c_test = 0.02, 0.01, 0.01, 0.01, 0.05, 0.01, 0.01, 0.02, 0.0, 0.01
 
 
 x = np.arange(len(labels))  # the label locations
@@ -27,13 +26,13 @@ rects3 = ax.bar(x + 1*width, lassolars, width*0.9, align='edge', label='LassoLAR
 rects4 = ax.bar(x + 2*width, cart, width*0.9, align='edge', label='CART')
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
-ax.set_ylabel('Score in %')
+ax.set_ylabel('Distance')
 ax.set_xlabel('Files')
-ax.set_title('Mean Absolute Error using test-set data')
+ax.set_title('Median Absolute Error using test-set data')
 # ax.set_title('Explained Variance using test-set data')
 ax.set_xticks(x + total_width/4)
 ax.set_xticklabels(labels, rotation=0, fontsize=10)
-ax.legend(loc='lower center')
+ax.legend(loc='upper right')
 
 
 def autolabel(rects):
@@ -55,7 +54,7 @@ autolabel(rects4)
 fig.tight_layout()
 
 plt.show()
-fig.savefig('./predicted_data_plots/avg_latency/MAE_test_set.png')
+fig.savefig('./predicted_data_plots/Regression/max_latency/MedAE_test_set.png')
 
 
 #####################

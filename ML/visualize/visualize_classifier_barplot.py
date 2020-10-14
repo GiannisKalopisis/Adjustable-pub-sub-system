@@ -81,13 +81,13 @@ rects5 = ax.bar(x + 3*width, bucket_10, width*0.9, align='center', label='10 Buc
 
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
-ax.set_ylabel('Parameter C')
+ax.set_ylabel('Value of parameter Gamma')
 ax.set_xlabel('Files')
-ax.set_title(title)
+ax.set_title(title, fontsize=15)
 # ax.set_title('Explained Variance using test-set data')
 ax.set_xticks(x + total_width/5)
 ax.set_xticklabels(labels, rotation=0, fontsize=9)
-ax.legend(loc='upper center')
+ax.legend(loc='best')
 
 
 def autolabel(rects):
@@ -98,7 +98,7 @@ def autolabel(rects):
                     xy=(rect.get_x() + rect.get_width() / 2, height),
                     xytext=(0, 3),  # 3 points vertical offset
                     textcoords="offset points",
-                    ha='center', va='bottom', fontsize=8, rotation=45) #  
+                    ha='center', va='bottom', rotation=90, weight='bold', fontsize=8) #  
 
 
 autolabel(rects1)
