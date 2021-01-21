@@ -4,9 +4,9 @@
 #Arguments: 1)file or directory
 #			2)destination directory
 
-set username sdi1500059
+# set username to server
 set host 195.134.67.93
-set password F-Qrfarqh
+# set password to server
 
 #get file or directory from command line
 set tranferData [lindex $argv 0];
